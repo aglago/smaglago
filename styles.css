@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Noto+Sans+JP:wght@300&family=Young+Serif&display=swap');
+
+header
+{
+    /* position: static; */
+    height: 2rem;
+    box-shadow: 0 0.2px grey;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.log, h2 
+{
+    font-weight: 4;
+    font-family: 'Young Serif';
+    color: #4070F4;
+}
+
+#menu
+{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.sub-title
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-bottom: 20px;
+}
+
+#menu
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.menu-itm
+{
+    text-decoration: none;
+    color: black;
+}
+
+#home-menu-itm
+{
+    border-bottom: 2px solid blue;
+}
+
+#home_footer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-top: 2rem;
+}
+
+.social-ic
+{
+    height: 15px;
+    width: 15px;
+}
+
+h1
+{
+    font-size: 2.8rem;
+    font-family: 'Martian Mono', monospace;
+    margin-bottom: 0;
+}
+
+span
+{
+    color: #4070F4;
+}
+
+button
+{
+    border: none;
+    height: 30px;
+    width: 100px;
+    background-color: #4070F4;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home_main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section1
+{
+    flex: 1;
+    padding-left: 5rem;
+    margin-bottom: 7rem;
+}
+
+#section2
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Skills*/
+#skills
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.skill-itm
+{
+    /* border: 1.5px solid #4070F4; */
+    width: 70vw;
+    height: 30vh;
+    padding-left: 3rem;
+
+
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-itm.html
+{
+    border: 1.5px solid #E54C21;
+}
+
+.skill-itm .ht
+{
+    color: #E54C21 !important;
+}
+
+.skill-itm.css
+{
+    border: 1.5px solid #2965F1;
+}
+
+.skill-itm .cs
+{
+    color: #2965F1 !important;
+}
+
+.skill-itm.javascript
+{
+    border: 1.5px solid #F7DF1E;
+}
+
+.skill-itm .js
+{
+    color: #F7DF1E !important;
+}
+
+.skill-itm.c
+{
+    border: 1.5px solid #293693;
+}
+
+.skill-itm .cc
+{
+    color: #293693 !important;
+}
+
+#skills h4
+{
+    color: #22a009;
+}
+
+.section2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3
+{
+    color: #22a009;
+}
