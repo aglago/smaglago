@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <title>A.M.</title>
+    <title>Ami Manye</title>
 </head>
 <body>
     <!--Header-->
@@ -16,8 +16,9 @@
         <nav id="menu">
             <a id="home-menu-itm" class="menu-itm" href="#hhome">Home</a>
             <!-- <a id="about" class="menu-itm" href="#about">About</a> -->
+            <a id="projects-menu-itm" class="menu-itm" href="#projects">Projects</a>
             <a id="skills-menu-itm" class="menu-itm" href="#skills">Skills</a>
-            <a id="projects" class="menu-itm" href="#projects">Projects</a>
+            <a id="blog" class="menu-itm" href="#blog">Blog</a>
             <a id="contact" class="menu-itm" href="#contact">Contact</a>
         </nav>
     </header>
@@ -55,113 +56,153 @@
         </main>
     </section>
 
-    <!--Skills-->
-    <section id="skills">
-        <!--Skill Item :: HTML-->
-        <div class="skill-itm html">
-            <!--Skill Name Section-->
-            <div class="section">
-                <!--Skill title-->
-                <h2 class="ht">
-                    HTML 5
-                </h2>
-                <!--Skill description-->
-                <p>
-                    Web Structuring & Prototyping
-                </p>
+    <!--Projects-->
+    <section id="projects">
+        <h2 style="text-align: center; font-size: 2rem;">Projects</h2>
+        <div class="container">
+            <!--Card 1 :: Project 1-->
+            <div class="card">
+                <!--First face-->
+                <div class="face face1">
+                    <div class="content">
+                        <img src="icon 1.png" alt="">
+                        <h3>Portfolio 2023</h3>
+                    </div>
+                </div>
+                <!--Second face-->
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
             </div>
-
-            <!--Skill Status Section-->
-            <div class="section2">
-                <h4>completed</h4>
+    
+            <!--Card 2 :: Project 2-->
+            <div class="card">
+                <!--First face-->
+                <div class="face face1">
+                    <div class="content">
+                        <img src="icon 1.png" alt="">
+                        <h3>The Code Academy</h3>
+                    </div>
+                </div>
+                <!--Second face-->
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
             </div>
-
-            <!--Skill Certificate Section-->
-            <div>
-                <img src="images/cert.png" height="110vh" width="160vw" alt="">
+    
+            <!--Card 3 :: Project 3-->
+            <div class="card">
+                <!--First face-->
+                <div class="face face1">
+                    <div class="content">
+                        <img src="icon 1.png" alt="">
+                        <h3>Bundle Free Communications</h3>
+                    </div>
+                </div>
+                <!--Second face-->
+                <div class="face face2">
+                    <div class="content">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
             </div>
-
-            
-        </div>
-
-        <!--Skill Item :: CSS-->
-        <div class="skill-itm css">
-            <!--Skill Name Section-->
-            <div class="section">
-                <!--Skill title-->
-                <h2 class="cs">
-                    CSS 3
-                </h2>
-                <!--Skill description-->
-                <p>
-                    Web Styling
-                </p>
-            </div>
-
-            <!--Skill Status Section-->
-            <div class="section2">
-                <h4>completed</h4>
-            </div>
-
-            <!--Skill Certificate Section-->
-            <div>
-                <img src="images/cert.png" height="110vh" width="160vw" alt="">
-            </div>
-        </div>
-
-        <!--Skill Item :: C-->
-        <div class="skill-itm c">
-            <!--Skill Name Section-->
-            <div class="section">
-                <!--Skill title-->
-                <h2 class="cc">
-                    C Language
-                </h2>
-                <!--Skill description-->
-                <p>
-                    Programming Language
-                </p>
-            </div>
-
-            <!--Skill Status Section-->
-            <div class="section2">
-                <h4>completed</h4>
-            </div>
-
-            <!--Skill Certificate Section-->
-            <div>
-                <img src="images/cert.png" height="110vh" width="160vw" alt="">
-            </div>     
-        </div>
-
-        <!--Skill Item :: JavaScript-->
-        <div class="skill-itm javascript">
-            <!--Skill Name Section-->
-            <div class="section">
-                <!--Skill title-->
-                <h2 class="js">
-                    JavaScript
-                </h2>
-                <!--Skill description-->
-                <p>
-                    Web Behaviour
-                </p>
-            </div>
-
-            <!--Skill Status Section-->
-            <div class="section2">
-                <h4>20%</h4>
-            </div>
-
-            <!--Learning Progress-->
-            <progress value="20" max="100"></progress>
-
-            <!--Skill Certificate Section-->
-            <!-- <div>
-                <img src="images/cert.png" height="110vh" width="160vw" alt="">
-            </div> -->     
         </div>
     </section>
+
+    <!--Skills-->
+    <div id="skills" class="skills_container">
+        <div class="skills_inner_container">
+            <h3 class="bx-rotate-270" style="border-bottom: 3px solid #4070F4; padding-top: 50px;">
+                Skills
+            </h3>
+
+            <!--Column-->
+            <div class="skills_middle">
+                <h2>What I do</h2>
+                <p>Started getting career serious with frontend development late September 2023</p>
+                <div class="langs_and_tools">
+                    <!--Row 1-->
+                    <div class="skills_row">
+                        <!--Skill :: HTML-->
+                        <div class="skill_container">
+                            <img src="images/html.png" alt="" style="max-height: 60px;">
+                            <h4>HTML 5</h4>
+                        </div>
+
+                        <!--Skill :: CSS-->
+                        <div class="skill_container">
+                            <img src="images/CSS3_logo.svg.png" alt="" style="max-height: 60px;">
+                            <h4>CSS 3</h4>
+                        </div>
+
+                        <!--Skill :: Javascript-->
+                        <div class="skill_container">
+                            <img src="images/Javascript_Logo.png" alt="" style="max-height: 60px;">
+                            <h4>JS</h4>
+                        </div>
+
+                        <!--Skill :: C-->
+                        <div class="skill_container">
+                            <img src="images/C.svg" alt="" style="max-height: 60px;">
+                            <h4>C</h4>
+                        </div>
+
+                        <!--Skill :: Python-->
+                        <div class="skill_container">
+                            <img src="images/Python-logo-notext.svg.png" alt="" style="max-height: 60px;">
+                            <h4>Python</h4>
+                        </div>
+                    </div>
+
+                    <!--Row 2-->
+                    <div class="skills_row">
+                        <!--Skill :: Linux-->
+                        <div class="skill_container">
+                            <img src="images/Tux.svg.png" alt="" style="max-height: 60px;">
+                            <h4>Linux</h4>
+                        </div>
+
+                        <!--Skill :: Git-->
+                        <div class="skill_container">
+                            <img src="images/Git_icon.svg.png" alt="" style="max-height: 60px;">
+                            <h4>Git</h4>
+                        </div>
+
+                        <!--Skill :: HTML-->
+                        <div class="skill_container">
+                            <img src="images/github icon.png" alt="" style="max-height: 60px;">
+                            <h4>Github</h4>
+                        </div>
+
+                        <!--Skill :: HTML-->
+                        <div class="skill_container">
+                            <img src="images/html.png" alt="" style="max-height: 60px;">
+                            <h4>HTML 5</h4>
+                        </div>
+
+                        <!--Skill :: HTML-->
+                        <div class="skill_container">
+                            <img src="images/html.png" alt="" style="max-height: 60px;">
+                            <h4>HTML 5</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

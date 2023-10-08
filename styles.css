@@ -19,6 +19,7 @@ header
     font-weight: 4;
     font-family: 'Young Serif';
     color: #4070F4;
+    margin: 0;
 }
 
 #menu
@@ -111,85 +112,182 @@ button
     justify-content: center;
 }
 
-
-/*Skills*/
-#skills
+/*PROJECTS STYLES*/
+#projects
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 5rem;
+    padding: 20px;
 }
 
-.skill-itm
+.container
 {
-    /* border: 1.5px solid #4070F4; */
-    width: 70vw;
-    height: 30vh;
-    padding-left: 3rem;
-
-
-    display: grid;
-    grid-template-columns: 40% 30% 30%;
-    align-items: center;
+    width: 1000px;
+    position: relative;
+    display: flex;
     justify-content: space-between;
+    font-family: consolas;
 }
 
-.skill-itm.html
+.container .card
 {
-    border: 1.5px solid #E54C21;
+    position: relative;
+    cursor: pointer;
 }
 
-.skill-itm .ht
+.container .card .face
 {
-    color: #E54C21 !important;
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
 }
 
-.skill-itm.css
+.container .card .face.face1
 {
-    border: 1.5px solid #2965F1;
-}
-
-.skill-itm .cs
-{
-    color: #2965F1 !important;
-}
-
-.skill-itm.javascript
-{
-    border: 1.5px solid #F7DF1E;
-}
-
-.skill-itm .js
-{
-    color: #F7DF1E !important;
-}
-
-.skill-itm.c
-{
-    border: 1.5px solid #293693;
-}
-
-.skill-itm .cc
-{
-    color: #293693 !important;
-}
-
-#skills h4
-{
-    color: #22a009;
-}
-
-.section2
-{
+    position: relative;
+    background-color: #4070F4;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1
+{
+    background: #ffa500;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content
+{
+    opacity: 0.8;
+    transition: 0.8s;
+}
+
+.container .card .face.face1 .content
+{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img
+{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3
+{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container .card .face.face2
+{
+    position: relative;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2
+{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a
+{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 3px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover
+{
+    background: #333;
+    color: #fff;
+}
+
+/*SKILLS STYLES*/
+.skills_container
+{
+    height: 100vh;
+    font-family: consolas;
+
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h3
+.skills_container .skills_inner_container
 {
-    color: #22a009;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    opacity: 1;
+    height: 80vh;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills_container .skills_inner_container .skills_middle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.skills_container .skills_inner_container .skills_middle .langs_and_tools
+{
+    height: 55vh; width: 60vw;
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills_container .skills_inner_container .skills_middle .langs_and_tools .skills_row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.skills_container .skills_inner_container .skills_middle .langs_and_tools .skill_container
+{
+    height: 120px;
+    width: 110px;
+    background-color: #4070F4;
+    color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
