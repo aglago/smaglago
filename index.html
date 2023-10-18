@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
     <title>Ami Manye</title>
 </head>
 <body>
     <!--Header-->
-    <header class=".header">
+    <header class="header">
         <p class="log">Ami Manye</p>
 
         <!--Menu-->
         <nav id="menu">
-            <a id="home-menu-itm" class="menu-itm" href="#hhome">Home</a>
+            <a id="home-menu-itm" class="menu-itm" href="#home">Home</a>
             <!-- <a id="about" class="menu-itm" href="#about">About</a> -->
             <a id="projects-menu-itm" class="menu-itm" href="#projects">Projects</a>
             <a id="skills-menu-itm" class="menu-itm" href="#skills">Skills</a>
@@ -58,72 +59,77 @@
 
     <!--Projects-->
     <section id="projects">
-        <h2 style="text-align: center;">Projects</h2>
-        <div class="container">
-            <!--Card 1 :: Project 1-->
-            <div class="card">
-                <!--First face-->
-                <div class="face face1">
-                    <div class="content">
-                        <img src="icon 1.png" alt="">
-                        <h3>Portfolio 2023</h3>
-                    </div>
+        <div class="blob2">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+                <path fill="#4070F4" d="M58.5,-53C67.4,-35.5,60.4,-11.7,54.4,11.5C48.4,34.7,43.4,57.3,28.3,68.1C13.2,78.9,-12,78.1,-33.3,68.2C-54.6,58.3,-72,39.3,-72.2,21.4C-72.4,3.4,-55.4,-13.6,-40.5,-32.4C-25.6,-51.3,-12.8,-72,6,-76.8C24.8,-81.6,49.6,-70.5,58.5,-53Z" transform="translate(100 100)" />
+              </svg>
+        </div>
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+        <div class="book">
+            <div class="cover">
+                <!-- <div class="cover-front-page"> -->
+                <label for="checkbox-cover" class="cover-front-page">
+                    <hr size="3" noshade color="white" width="50px">
+                    <h1>My <br>Projects <br>Diary</h1>
+                    <hr size="3" noshade color="white" width="50px">
+                </label>
+                <!-- </div> -->
+
+                <label class="prev" for="checkbox-cover"><div class="back-page"></div></label>
+            </div>
+            <!--Page 1-->
+            <div class="page" id="page1">
+                <div class="front-page">
+                    <h2>Welcome to my project diary</h2>
+                    <p>A chronicle of my journey through the world of creativity and innovation.</p>
+                    <p>Every project is a unique chapter in my creative narrative, and within these pages, you'll find a mosaic of creativity, determination, and the sheer joy of making things happen. Each entry reflects the dedication and passion I pour into my work.</p>
+                    <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
                 </div>
-                <!--Second face-->
-                <div class="face face2">
-                    <div class="content">
-                        <p>
-                            A showcase of my work, skills, and accomplishments. This project highlights my growing expertise in Web development.
-                        </p>
-                        <a href="https://portfolio2023-ten-rho.vercel.app/#blog" target="_blank">Read More</a>
-                    </div>
+                <div class="back-page">
+                    <img class="port-img" src="images/portfolio.png">
+                    <a href="">
+                        <div class="preview">
+                            Visit
+                        </div>
+                    </a>
+                    <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
                 </div>
             </div>
-    
-            <!--Card 2 :: Project 2-->
-            <div class="card">
-                <!--First face-->
-                <div class="face face1">
-                    <div class="content">
-                        <img src="icon 1.png" alt="">
-                        <h3>The Code Academy</h3>
-                    </div>
+            <!--Page 2-->
+            <div class="page" id="page2">
+                <div class="front-page">
+                    <h2>Portfolio 2023</h2>
+                    <p>As my very first project, I designed and developed a personal portfolio website to showcase my skills, experience, and achievements. </p>
+                    <p>This website serves as a digital representation of my work and provides visitors with a comprehensive overview of my capabilities.</p>
+                    <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
                 </div>
-                <!--Second face-->
-                <div class="face face2">
-                    <div class="content">
-                        <p>
-                            An interactive platform designed to teach coding skills to beginners and aspiring programmers.
-                        </p>
-                        <a href="#">Read More</a>
-                    </div>
+                <div class="back-page">
+                    <img class="port-img" src="https://cdn.britannica.com/80/149180-050-23E41CF0/topographic-map.jpg">
+                    <a href="">
+                        <div class="preview">
+                            Visit
+                        </div>
+                    </a>
+                    <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
                 </div>
             </div>
-    
-            <!--Card 3 :: Project 3-->
-            <div class="card">
-                <!--First face-->
-                <div class="face face1">
-                    <div class="content">
-                        <img src="icon 1.png" alt="">
-                        <h3>Bundle Free Communications</h3>
-                    </div>
-                </div>
-                <!--Second face-->
-                <div class="face face2">
-                    <div class="content">
-                        <p>
-                            Revolutionize the way you connect and collaborate with your team without the constraints of bundle plans.
-                        </p>
-                        <a href="#">Read More</a>
-                    </div>
+            <!--Page 3-->
+            <div class="page" id="page3">
+                <div class="front-page">
+                    <h2>02. Campus Map</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni laudantium beatae quia. Recusandae, fuga quas consectetur perferendis aperiam esse velit veniam ducimus? Quisquam consequatur perferendis quidem quia, recusandae ab!</p>
+                    <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
                 </div>
             </div>
+            <div class="back-cover"></div>
         </div>
     </section>
 
     <!--Skills-->
-    <div id="skills" class="skills_container">
+    <section id="skills" class="skills_container">
         <div class="skills_inner_container">
             <h3 class="bx-rotate-270" style="border-bottom: 3px solid #4070F4; padding-top: 50px;">
                 Skills
@@ -202,7 +208,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
