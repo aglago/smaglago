@@ -408,12 +408,13 @@ input {
     .project {
         position: relative;
         width: 350px;
-        height: 50vh;
+        height: 55vh;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
         text-align: left;
         border-radius: 10px;
         color: #1a2d62;
+        border: 2px solid red;
 
         .img {
             height: 50%;
@@ -438,10 +439,6 @@ input {
             text-align: left;
             padding-left: 10px;
         }
-    }
-
-    .project:hover {
-        
     }
 }
 
@@ -486,7 +483,7 @@ input {
     background: #fff;
     opacity: 1;
     height: 80vh;
-    width: 90vw;
+    width: 80vw;
 
     display: flex;
     flex-direction: row;
@@ -497,13 +494,18 @@ input {
         transform: rotate(270deg);
         margin: 0;
         border-bottom: 3px solid #4070f4;
+        padding-top: 50px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .skills_inner_container {
         box-shadow: 0 0 0 0;
-        /* gap: 2rem; */
+        width: 85vw;
+
+        .heading {
+            display: none;
+        }
     }
 }
 
