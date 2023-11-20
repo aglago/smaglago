@@ -35,6 +35,7 @@ header
     header {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        width: 100%;
         
         /* padding-left: 5rem;
         padding-right: 5rem; */
@@ -405,7 +406,7 @@ input {
     justify-content: center;
 }
 
-.skills_container .skills_inner_container
+.skills_inner_container
 {
     position: relative;
     box-sizing: border-box;
@@ -421,7 +422,7 @@ input {
     justify-content: space-between;
 }
 
-.skills_container .skills_inner_container .skills_middle
+.skills_middle
 {
     display: flex;
     flex-direction: column;
@@ -430,26 +431,34 @@ input {
     width: 90vw;
 }
 
-.skills_container .skills_inner_container .skills_middle .langs_and_tools
+.langs_and_tools
 {
     height: 55vh; width: 60vw;
     /* border: 1px solid red; */
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.skills_container .skills_inner_container .skills_middle .langs_and_tools .skills_row
+@media screen and (max-width: 600px) {
+    .langs_and_tools {
+        overflow: auto;
+    }
+}
+
+.skills_row
 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.skills_container .skills_inner_container .skills_middle .langs_and_tools .skill_container
+.skill_container
 {
     height: 120px;
     width: 110px;
@@ -463,9 +472,10 @@ input {
     text-align: center;
 }
 
-.skills_container .skills_inner_container .skills_middle .langs_and_tools .skill_container:hover
+.skill_container:hover
 {
     transition: 1s;
     background: #4070F4;
     color: #fff;
 }
+
