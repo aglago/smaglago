@@ -454,6 +454,7 @@ input {
         height: auto;
         padding-bottom: 5rem;
     }
+
     .large_screens {
         display: none;
     }
@@ -481,17 +482,29 @@ input {
 .skills_inner_container
 {
     position: relative;
-    box-sizing: border-box;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background: #fff;
     opacity: 1;
     height: 80vh;
-    width: 80vw;
+    width: 90vw;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    .heading {
+        transform: rotate(270deg);
+        margin: 0;
+        border-bottom: 3px solid #4070f4;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills_inner_container {
+        box-shadow: 0 0 0 0;
+        /* gap: 2rem; */
+    }
 }
 
 .skills_middle
@@ -505,20 +518,14 @@ input {
 
 .langs_and_tools
 {
-    height: 55vh; width: 60vw;
-    /* border: 1px solid red; */
-
+    height: 55vh;
+    width: 60vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    .langs_and_tools {
-        overflow: auto;
-    }
-}
 
 .skills_row
 {
@@ -542,12 +549,5 @@ input {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.skill_container:hover
-{
-    transition: 1s;
-    background: #4070F4;
-    color: #fff;
 }
 
