@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Noto+Sans+JP:wght@300&family=Young+Serif&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body
 {
     margin: 0;
@@ -13,7 +17,6 @@ header
     width: 100%;
     box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
     background-color: white;
-    box-sizing: border-box;
 
     display: flex;
     align-items: center;
@@ -27,10 +30,12 @@ header
 }
 
 @media screen and (max-width: 600px) {
-    /* for small screens */
 
-    #menu * {
-        display: none;
+    /* HEADER STYLES FOR SMALLER SCREENS : START */
+    header {
+        #menu > * {
+            display: none;
+        }
     }
 
     .menu_icon {
@@ -50,6 +55,15 @@ header
 
     header p {
         font-size: 30px;
+    }
+    /* HEADER STYLES FOR SMALLER SCREENS : END */
+
+    /* SECTION HOME FOR SMALLER SCREENS */
+    .home_main {
+        padding-top: 3rem;
+    }
+    #section2 * {
+        display: none;
     }
 }
 
