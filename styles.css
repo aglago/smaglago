@@ -15,7 +15,7 @@ header
     top: 0;
     height: 10vh;
     width: 100%;
-    box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 2px 8px 0 rgba(0, 0, 0, 0.1);
     background-color: white;
 
     display: flex;
@@ -403,37 +403,44 @@ input {
     .project {
         position: relative;
         width: 350px;
-        height: 30vh;
+        height: 45vh;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-        background-image: url(images/portfolio.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        border-radius: 10px;
+        color: #1a2d62;
+
+        .img {
+            height: 50%;
+            width: 100%;
+        }
+
+        .title {
+            text-align: center;
+            color: #4070F4;
+            font-size: 23px;
+        }
+
+        .desc {
+            padding: 0 10px 0 10px;
+        }
     }
 
-    .project::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(6, 11, 24, 0.4);
-        z-index: 1;
-    }
-
-    .proj_title {
-        color: white;
-        z-index: 2;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 25px;
-        margin-top: -6px;
+    .project:hover {
+        
     }
 }
 
+.small_screens a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
+    #projects {
+        height: auto;
+        padding-bottom: 5rem;
+    }
     .large_screens {
         display: none;
     }
