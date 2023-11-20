@@ -515,6 +515,7 @@ input {
     align-items: center;
     justify-content: space-between;
     width: 90vw;
+    text-align: center;
 }
 
 .langs_and_tools
@@ -523,6 +524,8 @@ input {
     width: 60vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
