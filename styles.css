@@ -53,15 +53,15 @@ header
         gap: 5px;
 
         .hor {
-            height: 5px;
-            width: 35px;
+            height: 4px;
+            width: 30px;
             background-color: #4070F4;
             border-radius: 5px;
         }
     }
 
     header p {
-        font-size: 28px;
+        font-size: 25px;
     }
     /* HEADER STYLES FOR SMALLER SCREENS : END */
 
@@ -164,18 +164,22 @@ button
     border-radius: 5px;
 }
 
-#home_main
-{
+#home_main {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#section1
-{
+#section1 {
     flex: 1;
     padding-left: 5rem;
     margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+    #section1 {
+        padding-left: 3.5rem;
+    }
 }
 
 #section2
