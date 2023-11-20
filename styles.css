@@ -15,7 +15,7 @@ header
     top: 0;
     height: 10vh;
     width: 100%;
-    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
     background-color: white;
 
     display: flex;
@@ -212,7 +212,7 @@ button
     margin: 0;
     overflow: hidden;
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
 }
 
@@ -393,6 +393,52 @@ input {
 	z-index: 3;
 }
 
+.small_screens {
+    display: none;
+    
+    .project {
+        position: relative;
+        width: 350px;
+        height: 30vh;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        background-image: url(images/portfolio.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .project::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(6, 11, 24, 0.4);
+        z-index: 1;
+    }
+
+    .proj_title {
+        color: white;
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        margin-top: -6px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .large_screens {
+        display: none;
+    }
+
+    .small_screens {
+        display: flex;
+        padding-top: 6rem;
+    }
+}
 
 
 /*SKILLS STYLES*/
