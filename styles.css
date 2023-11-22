@@ -6,7 +6,7 @@
 
 body
 {
-    margin: 0 0 2rem 0;
+    margin: 0 auto;
 }
 
 header
@@ -407,7 +407,7 @@ input {
     .project {
         position: relative;
         width: 350px;
-        height: 55vh;
+        height: 45vh;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
         text-align: left;
@@ -453,7 +453,7 @@ input {
 @media screen and (max-width: 600px) {
     #projects {
         height: auto;
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
     }
 
     .large_screens {
@@ -463,7 +463,7 @@ input {
     .small_screens {
         display: flex;
         flex-direction: column;
-        gap: 2.5rem;
+        gap: 2rem;
         padding-top: 6rem;
     }
 }
@@ -477,6 +477,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
 }
 
 .skills_inner_container
@@ -557,5 +558,17 @@ input {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    bottom: 0;
+    height: 8vh;
+    background-color: #4070F4;
+    color: white;
+    text-align: center;
+    line-height: 8vh;
+    font-family: consolas;
 }
 
