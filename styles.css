@@ -90,7 +90,13 @@ header
     font-weight: 4;
     font-family: 'Young Serif';
     color: #4070F4;
+
     margin: 0;
+}
+
+.skills_middle h2, #projects .heading
+{
+    font-size: 38px;
 }
 
 #menu
@@ -216,6 +222,18 @@ button
 	align-items: center;
     flex-direction: column;
 	justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+
+    .heading {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .heading {
+            display: block;
+        }
+    }
 }
 
 .cover h1
@@ -472,8 +490,9 @@ input {
 /*SKILLS STYLES*/
 .skills_container
 {
+    position: relative;
     font-family: consolas;
-
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -482,7 +501,10 @@ input {
 
 .skills_inner_container
 {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background: #fff;
     opacity: 1;
