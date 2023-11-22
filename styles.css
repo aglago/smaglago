@@ -212,9 +212,6 @@ button
     position: relative;
     font-family: "Poppin", sans-serif;
 	background-color: #fff;
-	height: 100vh;
-    padding: 0 1.5rem;
-
 	display: flex;
 	align-items: center;
     flex-direction: column;
@@ -416,6 +413,8 @@ input {
         text-align: left;
         border-radius: 10px;
         color: #1a2d62;
+        padding-left: 1rem;
+        padding-right: 1rem;
 
         .img {
             height: 50%;
@@ -473,7 +472,6 @@ input {
 /*SKILLS STYLES*/
 .skills_container
 {
-    height: 100vh;
     font-family: consolas;
 
     display: flex;
