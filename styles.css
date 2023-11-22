@@ -90,8 +90,11 @@ header
     font-weight: 4;
     font-family: 'Young Serif';
     color: #4070F4;
-
     margin: 0;
+}
+
+.log {
+    font-size: larger;
 }
 
 .skills_middle h2, #projects .heading
