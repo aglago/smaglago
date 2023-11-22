@@ -12,18 +12,18 @@ body
 
 header
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 10vh;
     width: 100%;
-    box-shadow: 4px 2px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 1px 3px 0 rgba(0, 0, 0, 0.1);
     background-color: white;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 5rem;
     padding-right: 5rem;
+    z-index: 10;
 }
 
 .menu_icon {
@@ -61,9 +61,6 @@ header
         }
     }
 
-    header p {
-        font-size: 25px;
-    }
     /* HEADER STYLES FOR SMALLER SCREENS : END */
 
     /* SECTION HOME FOR SMALLER SCREENS */
@@ -95,7 +92,7 @@ header
 }
 
 .log {
-    font-size: larger;
+    font-size: 23px;
 }
 
 .skills_middle h2, #projects .heading
@@ -486,7 +483,7 @@ input {
         display: flex;
         flex-direction: column;
         gap: 2.5rem;
-        padding-top: 6rem;
+        padding-top: 3rem;
     }
 }
 
@@ -568,7 +565,7 @@ input {
     width: 110px;
     background-color: #fff;
     color: #4070F4;
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
     display: grid;
     grid-template-rows: 80% 20%;
     align-items: center;
@@ -599,5 +596,14 @@ footer {
     text-align: center;
     line-height: 8vh;
     font-family: consolas;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    background-color: #1a2d62;
 }
 
