@@ -69,6 +69,7 @@ header
     .home_main {
         padding-top: 3rem;
     }
+
     #section2 * {
         display: none;
     }
@@ -212,9 +213,8 @@ button
     font-family: "Poppin", sans-serif;
 	background-color: #fff;
 	height: 100vh;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+    padding: 0 1.5rem;
+
 	display: flex;
 	align-items: center;
     flex-direction: column;
@@ -400,6 +400,8 @@ input {
 
 .small_screens {
     display: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     .heading {
         text-align: center;
@@ -445,6 +447,10 @@ input {
     text-decoration: none;
 }
 
+.small_screen a:hover {
+    background-color: #1a2d62;
+}
+
 @media screen and (max-width: 600px) {
     #projects {
         height: auto;
@@ -458,7 +464,7 @@ input {
     .small_screens {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2.5rem;
         padding-top: 6rem;
     }
 }
@@ -468,7 +474,7 @@ input {
 .skills_container
 {
     height: 100vh;
-    font-style: consolas;
+    font-family: consolas;
 
     display: flex;
     align-items: center;
