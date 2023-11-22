@@ -6,6 +6,7 @@
 
 body
 {
+    position: relative;
     margin: 0 auto;
 }
 
@@ -583,12 +584,24 @@ input {
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    .img {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill_container {
+        height: 10vh;
+        width: 10vh;
+    }
 }
 
 /* FOOTER */
 footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
+    width: 100%;
     height: 8vh;
     background-color: #4070F4;
     color: white;
