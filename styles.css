@@ -558,18 +558,8 @@ input {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    align-content: flex-start;
     gap: 10px;
-}
-
-
-.skills_row
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
 .skill_container
@@ -578,7 +568,7 @@ input {
     width: 110px;
     background-color: #fff;
     color: #4070F4;
-    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.15);
     display: grid;
     grid-template-rows: 80% 20%;
     align-items: center;
@@ -587,6 +577,7 @@ input {
 
     .img {
         height: 60%;
+        margin: 0 auto;
     }
 }
 
