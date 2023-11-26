@@ -535,11 +535,6 @@ input {
     padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-    .skills_container {
-        height: 70vh;
-    }
-}
 
 .skills_inner_container
 {
@@ -667,6 +662,8 @@ footer a:hover {
     height: 100vh;
     padding: 6rem 0;
     position: relative;
+    margin-top: -45vh;
+
 }
 
 .contact_wrap {
