@@ -46,19 +46,131 @@ header
             display: none;
         }
     }
-
+    
     .menu_icon {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 5px;
-
-        .hor {
+        cursor: pointer;
+    
+        .one, .two, .three {
             height: 4px;
             width: 30px;
             background-color: #4070F4;
-            border-radius: 5px;
+            border-radius: 5px;        
+        }
+    
+        .one {
+            z-index: 1;
+        }
+    
+        .two {
+            z-index: 2;
+        }
+    
+        .three {
+            z-index: 3;
+        }
+    }
+    
+    .menu_icon.exit div:nth-child(1) {
+        /* animation: name duration timing-function delay iteration-count direction */
+        animation: div_one_to_middle 0.5s ease-in forwards;
+    }
+    
+    .menu_icon.exit div:nth-child(2) {
+        animation: div_two_dissapear 0.5s ease-in forwards;
+    }
+    
+    .menu_icon.exit div:nth-child(3) {
+        animation: div_three_to_middle 0.5s ease-in forwards;
+    }
+    
+    
+    @keyframes
+    div_one_to_middle {
+        0% {
+            transform: translateY(0) rotate(0);
+        }
+        50% {
+            transform: translateY(9px);
+        }
+        100% {
+            transform: translateY(9px) rotate(45deg);
+        }
+    }
+    
+    @keyframes
+    div_two_dissapear {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    
+        100% {
+            transform: scale(0);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes
+    div_three_to_middle {
+        0% {
+            transform: translateY(0) rotate(0);
+        }
+        50% {
+            transform: translateY(-9px);
+        }
+        100% {
+            transform: translateY(-9px) rotate(135deg);
+        }
+    }
+    
+    .menu_icon.reverse_animation div:nth-child(1){
+        animation: reverse_one 0.5s ease-in forwards;
+    }
+    
+    .menu_icon.reverse_animation div:nth-child(2){
+        animation: reverse_two 0.5s ease-in forwards;
+    }
+    .menu_icon.reverse_animation div:nth-child(3){
+        animation: reverse_three 0.5s ease-in forwards;
+    }
+    
+    @keyframes reverse_one {
+        0% {
+            transform: translateY(22px) rotate(45deg);
+        }
+        50% {
+            transform: translateY(22px);
+        }
+        100% {
+            transform: translateY(0)  rotate(0);
+        }
+    }
+    
+    @keyframes reverse_two {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes reverse_three {
+        0% {
+            transform: translateY(-22px) rotate(135deg);
+        }
+        50% {
+            transform: translateY(-22px);
+        }
+        100% {
+            transform: translateY(0) rotate(0);
         }
     }
 
