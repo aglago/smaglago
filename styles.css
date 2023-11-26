@@ -249,8 +249,8 @@ button
 }
 
 .book {
-	width: 350px;
-	height: 450px;
+	width: 90vw;
+	height: 95vh;
 	position: relative;
 	transition-duration: 1s;
 	perspective: 1500;
@@ -285,7 +285,7 @@ input {
 	height: 80%;
     text-align: center;
 	border-radius: 0 15px 15px 0;
-	box-shadow: 0 0 5px rgb(41, 41, 41);
+	box-shadow: 0 0 5px rgb(0, 0, 0, 0.15);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -357,6 +357,7 @@ input {
 	backface-visibility: hidden;
 	box-sizing: border-box;
 	padding: 1rem;
+    cursor: pointer;
 }
 
 .front-page p
@@ -376,6 +377,7 @@ input {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
 }
 
 .next, .prev {
@@ -513,7 +515,7 @@ input {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background: #fff;
     opacity: 1;
-    height: 90vh;
+    height: 70vh;
     width: 80vw;
 
     display: flex;
@@ -542,12 +544,17 @@ input {
 
 .skills_middle
 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 90vw;
     text-align: center;
+    padding-top: 6rem;
 }
 
 .langs_and_tools
@@ -565,8 +572,8 @@ input {
 
 .skill_container
 {
-    height: 120px;
-    width: 110px;
+    height: 15vh;
+    width: 8vw;
     background-color: #fff;
     color: #4070F4;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -580,6 +587,10 @@ input {
         height: 60%;
         margin: 0 auto;
     }
+}
+
+.skill_container h4 {
+    font-size: 80%;
 }
 
 @media screen and (max-width: 600px) {
