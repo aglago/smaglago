@@ -141,10 +141,10 @@ header
     
     @keyframes reverse_one {
         0% {
-            transform: translateY(22px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
         }
         50% {
-            transform: translateY(22px);
+            transform: translateY(9px);
         }
         100% {
             transform: translateY(0)  rotate(0);
@@ -164,10 +164,10 @@ header
     
     @keyframes reverse_three {
         0% {
-            transform: translateY(-22px) rotate(135deg);
+            transform: translateY(-9px) rotate(135deg);
         }
         50% {
-            transform: translateY(-22px);
+            transform: translateY(-9px);
         }
         100% {
             transform: translateY(0) rotate(0);
