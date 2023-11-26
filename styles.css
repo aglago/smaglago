@@ -63,6 +63,9 @@ header
     }
 
     /* HEADER STYLES FOR SMALLER SCREENS : END */
+    .home_main {
+        padding-top: 3rem;
+    }
 
     /* SECTION HOME FOR SMALLER SCREENS */
     #section2 * {
@@ -123,6 +126,7 @@ header
 
 .home {
     padding-top: 3rem;
+    height: 100vh;
 }
 
 .border
