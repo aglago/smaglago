@@ -535,6 +535,12 @@ input {
     padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+    .skills_container {
+        height: 70vh;
+    }
+}
+
 .skills_inner_container
 {
     position: absolute;
