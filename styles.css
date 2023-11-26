@@ -233,11 +233,15 @@ button
     .heading {
         display: none;
     }
+}
 
-    @media screen and (max-width: 600px) {
-        .heading {
-            display: block;
-        }
+@media screen and (max-width: 600px) {
+    #projects {
+        margin-top: -5vh;
+    }
+
+    #projects .heading {
+        display: block;
     }
 }
 
@@ -533,6 +537,12 @@ input {
     align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .skills_container {
+        margin-top: -10vh;
+    }
 }
 
 
