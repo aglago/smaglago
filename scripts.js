@@ -1,4 +1,20 @@
 const menu = document.getElementsByClassName("menu-itm");
+const icon = document.getElementById("menu_icon");
+
+
+//adding a click event listener to icon
+icon.addEventListener('click', ()=> {
+    if (icon.classList.contains("exit"))
+    {
+        icon.classList.remove("exit");
+        icon.classList.add("reverse_animation");
+    }
+    else
+    {
+        icon.classList.add("exit");
+        icon.classList.remove("reverse_animation");
+    }
+});
 
 // LISTEN TO SCROLLING AND UPDATE BORDER WHEN NECESSARY
 window.addEventListener('scroll', function(){
