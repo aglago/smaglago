@@ -8,16 +8,17 @@ body
 {
     position: relative;
     margin: 0 auto;
+    background-color: #eee;
 }
 
 header
 {
     position: fixed;
     top: 0;
-    height: 10vh;
+    height: 9vh;
     width: 100%;
+    background-color: #fff;
     box-shadow: 2px 1px 3px 0 rgba(0, 0, 0, 0.1);
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,7 +129,7 @@ header
     padding-top: 5rem;
 }
 
-#home-menu-itm
+.border
 {
     border-bottom: 2px solid blue;
 }
@@ -198,6 +199,10 @@ button
     justify-content: center;
 }
 
+.about {
+    height: 100vh;
+}
+
 
 /*PROJECTS*/
 .blob
@@ -218,7 +223,6 @@ button
 {
     position: relative;
     font-family: "Poppin", sans-serif;
-	background-color: #fff;
 	display: flex;
 	align-items: center;
     flex-direction: column;
@@ -509,7 +513,7 @@ input {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background: #fff;
     opacity: 1;
-    height: 80vh;
+    height: 90vh;
     width: 80vw;
 
     display: flex;
@@ -607,3 +611,46 @@ footer a:hover {
     background-color: #1a2d62;
 }
 
+.blog {
+    height: 100vh;
+}
+
+/* ABOUT SECTION */
+
+.contact {
+    height: 100vh;
+    padding: 6rem 0;
+    position: relative;
+}
+
+.contact_wrap {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_wrap p {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.contact_wrap span {
+    color: #4070F4;
+}
+
+.socials img {
+    height: 8vh;
+    width: 4vw;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}

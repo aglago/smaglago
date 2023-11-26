@@ -10,10 +10,7 @@ window.addEventListener('scroll', function(){
 
         if (rect.top <= 50 && rect.bottom >= 50) {
             if (index < navLinks.length)
-            {
-                console.log(`about to read class of: ${navLinks[index]}`);
-            updateClass(navLinks[index]);
-            }
+                updateClass(navLinks[index]);
         }
     });
 });
