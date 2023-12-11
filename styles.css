@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body
 {
     position: relative;
@@ -312,7 +316,8 @@ button
 }
 
 .about {
-    height: 109vh;
+    padding-top: 11vh;
+    height: 111vh;
 }
 
 
@@ -320,14 +325,7 @@ button
 .blob
 {
     position: absolute;
-    bottom: -6rem;
-    left: -5rem;
-}
-
-.blob2
-{
-    position: absolute;
-    top: -6rem;
+    top: -2rem;
     left: -5rem;
 }
 
@@ -339,7 +337,8 @@ button
 	align-items: center;
     flex-direction: column;
 	justify-content: center;
-    height: 109vh;
+    height: 111vh;
+    padding-top: 5vh;
     overflow: hidden;
 
     .heading {
@@ -644,7 +643,8 @@ input {
 {
     position: relative;
     font-family: consolas;
-    height: 109vh;
+    padding-top: 11vh;
+    height: 111vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -775,7 +775,8 @@ footer a:hover {
 }
 
 .blog {
-    height: 109vh;
+    padding-top: 11vh;
+    height: 111vh;
 }
 
 /* ABOUT SECTION */
