@@ -242,7 +242,6 @@ header
 
 .home {
     padding-top: 3rem;
-    height: 100vh;
 }
 
 .border
@@ -576,30 +575,39 @@ input {
     .project {
         position: relative;
         width: 350px;
-        height: 45vh;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
         text-align: left;
         border-radius: 10px;
         color: #1a2d62;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 2rem 1rem;
 
         .img {
             height: 45%;
             width: 100%;
         }
 
+        .titleAndStatus {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
         .title {
-            text-align: center;
+            text-align: left;
             color: #4070F4;
-            font-size: 23px;
+            font-size: 15px;
+            padding: 0 1rem;
+            padding-top: 10px;
+            margin: 0;
         }
 
         .desc {
             padding: 0 10px 0 10px;
             text-align: left;
             max-width: 95%;
+            line-height: 1.4;
         }
 
         .view {
@@ -643,8 +651,7 @@ input {
 {
     position: relative;
     font-family: consolas;
-    padding-top: 11vh;
-    height: 111vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -667,7 +674,7 @@ input {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     background: #fff;
     opacity: 1;
-    height: 70vh;
+    /* height: 70vh; */
     width: 80vw;
 
     display: flex;
@@ -711,7 +718,6 @@ input {
 
 .langs_and_tools
 {
-    height: 55vh;
     width: 60vw;
     display: flex;
     flex-direction: row;
@@ -781,25 +787,19 @@ footer a:hover {
 
 /* ABOUT SECTION */
 
-.contact {
-    height: 100vh;
+/* .contact {
     padding: 6rem 0;
-    position: relative;
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .contact {
         margin-top: -45vh;
     }
-}
+} */
 
 .contact_wrap {
-    position: absolute;
-    height: 80vh;
+    height: 60vh;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -809,6 +809,7 @@ footer a:hover {
 .contact_wrap p {
     font-family: 'Noto Sans JP', sans-serif;
     max-width: 80vw;
+    text-align: center;
 }
 
 .contact_wrap span {
