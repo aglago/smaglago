@@ -38,3 +38,43 @@ function updateClass(visibleElement)
         section.classList.remove("border");
     visibleElement.classList.add("border");
 }
+
+// Working on dark mode
+const darkMode = document.getElementById("darkmode");
+darkMode.addEventListener("click", darkModeChanges);
+
+function darkModeChanges() {
+    const body = document.getElementById("body");
+    const h1 = document.getElementById("heroH1");
+    const paragraphs = document.querySelectorAll("p");
+    
+    if (body.classList.contains("lightBody")) {
+        body.classList.remove("lightBody");
+        body.classList.add("darkBody");
+    } else {
+        body.classList.add("lightBody");
+        body.classList.remove("darkBody");
+    }
+}
+
+// carosel
+
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const slides = document.querySelectorAll('.projects_wrapper .carousel > div');
+let currentIndex = 0;
+
+function showSlide(index) {
+    slides.forEach(slide => slide.style.display = 'none');
+    slides[index].style.display = 'flex';
+}
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+});
