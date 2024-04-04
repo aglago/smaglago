@@ -1,5 +1,7 @@
 const menu = document.getElementsByClassName("menu-itm");
 const icon = document.getElementById("menu_icon");
+const header = document.getElementById("header");
+const menu_mobile = document.getElementById("menu_mobile");
 
 
 //adding a click event listener to icon
@@ -8,11 +10,16 @@ icon.addEventListener('click', ()=> {
     {
         icon.classList.remove("exit");
         icon.classList.add("reverse_animation");
+        // menu_mobile.classList.add("noshow");
+        // menu_mobile.classList.remove("show");
+        
     }
     else
     {
         icon.classList.add("exit");
         icon.classList.remove("reverse_animation");
+        // menu_mobile.classList.remove("noshow");
+        // menu_mobile.classList.add("show");
     }
 });
 
