@@ -108,13 +108,10 @@ header {
 }
 
 .noshow {
-    /* display: none; */
-    opacity: 0;
+    display: none;
 }
 
 .show {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -453,7 +450,7 @@ button
     padding-top: 5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     #section1 {
         padding-left: 3.5rem;
         padding-top: unset;
@@ -714,7 +711,7 @@ section.skills_container {
     gap: 5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     #projects {
         height: auto;
         padding-bottom: 2rem;
@@ -824,7 +821,7 @@ section.skills_container {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .skills_inner_container {
         box-shadow: 0 0 0 0;
         width: 85vw;
@@ -894,7 +891,7 @@ section.skills_container {
     font-size: 80%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .skill_container {
         height: 10vh;
         width: 10vh;
@@ -940,7 +937,7 @@ footer a:hover {
     /* padding-bottom: 15vh; */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .contact_wrap {
         margin-top: -6rem;
     }
@@ -961,7 +958,7 @@ footer a:hover {
     width: 4vw;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .socials img {
         height: 7vh;
         width: 12vw;
