@@ -2,6 +2,8 @@ const menu = document.getElementsByClassName("menu-itm");
 const icon = document.getElementById("menu_icon");
 const header = document.getElementById("header");
 const menu_mobile = document.getElementById("menu_mobile");
+const mobile_menu = document.getElementsByClassName("mobile_menu-itm");
+
 
 
 //adding a click event listener to icon
@@ -10,16 +12,24 @@ icon.addEventListener('click', ()=> {
     {
         icon.classList.remove("exit");
         icon.classList.add("reverse_animation");
-        // menu_mobile.classList.add("noshow");
-        // menu_mobile.classList.remove("show");
-        
+        menu_mobile.classList.add("noshow");
+        menu_mobile.classList.remove("show");
+        if (menu_mobile.classList.contains("noshow"))
+            document.getElementById("menu_mobile").style.display = "none";
+        else
+            document.getElementById("menu_mobile").style.display = "flex";
     }
     else
     {
         icon.classList.add("exit");
         icon.classList.remove("reverse_animation");
-        // menu_mobile.classList.remove("noshow");
-        // menu_mobile.classList.add("show");
+        menu_mobile.classList.remove("noshow");
+        menu_mobile.classList.add("show");
+        
+        if (menu_mobile.classList.contains("noshow"))
+            document.getElementById("menu_mobile").style.display = "none";
+        else
+            document.getElementById("menu_mobile").style.display = "flex";
     }
 });
 
@@ -44,6 +54,17 @@ function updateClass(visibleElement)
     for (let section of menu)
         section.classList.remove("border");
     visibleElement.classList.add("border");
+}
+
+// make div disappear when a link is clicked
+
+const mobileNavLinks = document.querySelectorAll(".menu_mobile a");
+for (let link of mobileNavLinks) {
+    link.addEventListener("click", () => {
+        document.getElementById("menu_mobile").style.display = "none";
+        icon.classList.remove("exit");
+        icon.classList.add("reverse_animation");
+    })
 }
 
 // Working on dark mode

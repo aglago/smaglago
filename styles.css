@@ -7,8 +7,10 @@
 :root {
     --primary-color: #4070F4;
     --secondary-color: #815D44;
-    --darkmode: #0d1631;
+    --darkmode: #060b18;
     --lightH1: #000000;
+    --youngserif: 'Young Serif';
+    --noto: 'Noto Sans JP', sans-serif;
 }
 
 html {
@@ -45,12 +47,22 @@ body {
         color: white;
     }
 
+    .skill_container {
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    }
+
     header {
         background-color: var(--darkmode);
+        /* box-shadow: 2px 1px 5px 0 rgba(64, 112, 244, 0.1); */
+        border-bottom: 1px solid #20387a;
     }
     
     a {
         color: white;
+    }
+
+    .menu_mobile {
+        background-color: var(--darkmode);
     }
 }
 
@@ -87,25 +99,37 @@ header {
 
 .menu_mobile {
     position: absolute;
-    top: 11vh;
+    top: 10vh;
     z-index: 15;
 }
 
+.menu_mobile > a {
+    color: var(--primary-color);
+}
+
 .noshow {
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 .show {
+    
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 89vh;
-    justify-content: space-between;
+    height: 90vh;
+    gap: 4rem;
     align-items: center;
     background-color: #fff;
     padding: 5rem 0;
     font-size: 17px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--noto);
+    position: fixed;
 }
 
 @media screen and (max-width: 480px) {
@@ -267,7 +291,7 @@ header {
 
 .log, h2 {
     font-weight: 4;
-    font-family: 'Young Serif';
+    font-family: var(--youngserif);
     color: var(--primary-color);
     margin: 0;
 }
@@ -282,7 +306,7 @@ h2 {
 }
 
 #menu {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--noto);
 }
 
 .sub-title {
@@ -316,11 +340,11 @@ h2 {
         border-radius: 10px;
         position: absolute;
         /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.55);
+        background: rgba(255, 255, 255, 0.2);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.49);
+        border: 1px solid rgba(255, 255, 255, 0.3);
         z-index: 10;
     }
 
@@ -355,7 +379,21 @@ h2 {
     align-items: center;
     justify-content: start;
     gap: 10px;
-    padding-top: 2rem;
+    padding-top: 1rem;
+
+    a {
+        background-color: white;
+        padding: 5px 8px;
+        border-radius: 50%;
+        padding-top: 8px;
+    }
+}
+
+#home_footer a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.5s;
+    transform: translateY(-5px);
 }
 
 .social-ic {
@@ -403,17 +441,26 @@ button
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+    #home_main {
+        height: auto;
+    }
 }
 
 #section1 {
     flex: 1;
     padding-left: 5rem;
     margin-bottom: 7rem;
+    padding-top: 5rem;
 }
 
 @media screen and (max-width: 600px) {
     #section1 {
         padding-left: 3.5rem;
+        padding-top: unset;
     }
 }
 
@@ -426,7 +473,19 @@ button
 }
 
 .about {
-    padding: 11vh 5rem 0 5rem;
+    padding: 11vh 5rem 5rem 5rem;
+}
+
+section.skills_container {
+    padding: 11vh 5rem 0 5rem !important;
+    height: 100vh;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .about_wrapper {
         display: flex;
@@ -505,6 +564,16 @@ button
         @media screen and (max-width: 480px){
             div.columns {
                 flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+
+                .column2 {
+                    align-items: flex-start;
+
+                    .achievements {
+                        text-align: left;
+                    }
+                }
             }
         }
 
@@ -536,6 +605,7 @@ button
     .about {
         padding-left: 3.5rem;
         padding-right: 3.5rem;
+        height: auto;
     }
 }
 
@@ -695,7 +765,7 @@ button
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         flex-wrap: wrap;
         flex: 1;
 
@@ -707,7 +777,12 @@ button
 
         .spans {
 
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+
             span {
+                display: block;
                 color: #fff;
                 padding: 5px 10px;
                 border-radius: 5px;
@@ -866,6 +941,7 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* padding-bottom: 15vh; */
 }
 
 @media screen and (max-width: 600px) {
