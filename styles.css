@@ -129,11 +129,12 @@ header {
 
     /* HEADER STYLES FOR SMALLER SCREENS : START */
     header {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
         width: 100%;
 
-        .right .menu {
+        #menu,
+        .menu {
             display: none;
         }
     }
