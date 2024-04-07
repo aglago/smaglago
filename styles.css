@@ -459,10 +459,6 @@ button
 }
 
 .about {
-    padding: 15vh 5rem 0 5rem;
-}
-
-.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -554,6 +550,13 @@ button
                         text-align: left;
                     }
                 }
+
+                @media screen and (max-width: 480px) {
+                    .column2 {
+                        align-items: center;
+                        width: 100%;
+                    }
+                }
             }
         }
 
@@ -583,8 +586,7 @@ button
 
 @media screen and (max-width: 480px) {
     .about {
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        padding: 15vh 2.5rem 0 2.5rem;
         height: auto;
     }
 }
@@ -779,8 +781,8 @@ button
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 
@@ -839,6 +841,12 @@ button
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .langs_and_tools {
+        width: auto;
+    }
 }
 
 .skill_container
