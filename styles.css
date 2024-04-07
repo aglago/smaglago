@@ -343,7 +343,7 @@ h2 {
 
     @media screen and (max-width: 480px) {
         .scrolldown {
-            bottom: 1.5rem;
+            bottom: 3rem;
             display: flex;
         }
     }
@@ -779,6 +779,7 @@ button
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15vh;
 }
 
 
