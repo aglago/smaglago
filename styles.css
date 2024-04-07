@@ -779,7 +779,7 @@ button
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
 }
 
 
@@ -825,6 +825,7 @@ button
     justify-content: space-between;
     width: 90vw;
     text-align: center;
+    padding-top: 11vh;
 }
 
 .langs_and_tools
