@@ -445,7 +445,7 @@ button
 
 @media screen and (max-width: 480px) {
     #section1 {
-        padding-left: 2rem;
+        padding-left: 2.5rem;
         padding-top: unset;
     }
 }
@@ -779,6 +779,8 @@ button
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 
