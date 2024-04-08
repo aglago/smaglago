@@ -109,6 +109,11 @@ nextBtn.addEventListener('click', () => {
 
 // for count achievements
 
+// Initialize counters started status
+let yearsExperienceStarted = false;
+let projectsCompletedStarted = false;
+let awardsWonStarted = false;
+
 document.addEventListener('scroll', () => {
   const yearsExperience = document.getElementById('yearsExperience');
   const projectsCompleted = document.getElementById('projectsCompleted');
@@ -116,16 +121,20 @@ document.addEventListener('scroll', () => {
   
   const offset = window.innerHeight * 0.9; // Adjust as needed
   
-  if (yearsExperience.getBoundingClientRect().top < offset) {
+  if (!yearsExperienceStarted && yearsExperience.getBoundingClientRect().top < offset) {
     startCounting('yearsExperience', 2); // Start counting from 0 to 2
+    yearsExperienceStarted = true;
   }
-  if (projectsCompleted.getBoundingClientRect().top < offset) {
+  if (!projectsCompletedStarted && projectsCompleted.getBoundingClientRect().top < offset) {
     startCounting('projectsCompleted', 5); // Start counting from 0 to 5
+    projectsCompletedStarted = true;
   }
-  if (awardsWon.getBoundingClientRect().top < offset) {
+  if (!awardsWonStarted && awardsWon.getBoundingClientRect().top < offset) {
     startCounting('awardsWon', 10); // Start counting from 0 to 10
+    awardsWonStarted = true;
   }
 });
+
 
 function startCounting(id, target) {
   let count = 0;
