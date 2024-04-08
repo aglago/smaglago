@@ -384,6 +384,14 @@ h2 {
     transform: translateY(-5px);
 }
 
+@media screen and (max-width: 480px) {
+    #home_footer a:hover {
+        transition: unset;
+        transform: unset;
+        background-color: white;
+    }
+}
+
 .social-ic {
     height: 15px;
     width: 15px;
@@ -464,6 +472,13 @@ button
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 22vh 5rem 0 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        padding: 11vh 1.5rem 0 1.5rem;
+    }
 }
 
 .about .about_wrapper {
@@ -472,7 +487,6 @@ button
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
 }
 
 .about .about_wrapper img {
@@ -907,29 +921,6 @@ button
     }
 }
 
-/* FOOTER */
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 8vh;
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    line-height: 8vh;
-    font-family: consolas;
-    z-index: 11;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer a:hover {
-    background-color: #1a2d62;
-}
-
 .blog {
     padding-top: 11vh;
     height: 111vh;
@@ -972,8 +963,39 @@ footer a:hover {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .socials img {
+        height: 7.5vh;
+        width: 12vw;
+    }
+}
+
 .socials {
     display: flex;
     gap: 2rem;
     padding: 1rem 0;
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    line-height: 8vh;
+    font-family: consolas;
+    z-index: 11;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    background-color: #1a2d62;
 }
