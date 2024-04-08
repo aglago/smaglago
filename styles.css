@@ -716,13 +716,6 @@ button
     }
 }
 
-.small_screens,
-.project {
-    display: flex;
-    flex-direction: column;
-    /* gap: 5px; */
-}
-
 .projects_wrapper {
     display: flex;
     align-items: center;
@@ -776,6 +769,22 @@ button
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .projectdesc span,
+    .small_screens span {
+        padding: 5px 10px;
+    }
+}
+
+.project .spans {
+    padding-left: 1rem;
+    margin: 15px 0;
+}
+
+.project .spans span {
+    font-size: 9px;
 }
 
 
