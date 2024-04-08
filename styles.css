@@ -35,10 +35,6 @@ body {
 .darkBody {
     background-color: var(--darkmode);
 
-    h1 {
-        color: #fff;
-    }
-
     p {
         color: #fff;
     }
@@ -50,20 +46,24 @@ body {
     .skill_container {
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     }
+}
 
-    header {
-        background-color: var(--darkmode);
-        /* box-shadow: 2px 1px 5px 0 rgba(64, 112, 244, 0.1); */
-        border-bottom: 1px solid #20387a;
-    }
-    
-    a {
-        color: white;
-    }
+.darkBody h1 {
+    color: #fff;
+}
 
-    .menu_mobile {
-        background-color: var(--darkmode);
-    }
+.darkBody .menu_mobile {
+    background-color: var(--darkmode);
+}
+
+.darkBody a {
+    color: white;
+}
+
+.darkBody header {
+    background-color: var(--darkmode);
+    /* box-shadow: 2px 1px 5px 0 rgba(64, 112, 244, 0.1); */
+    border-bottom: 1px solid #20387a;
 }
 
 header {
@@ -79,18 +79,18 @@ header {
     padding-left: 5rem;
     padding-right: 5rem;
     z-index: 12;
+}
 
-    .right {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-top: 0.5rem;
-        gap: 2rem;
-    }
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    gap: 2rem;
+}
 
-    .darkmode {
-        cursor: pointer;
-    }
+.darkmode {
+    cursor: pointer;
 }
 
 .menu_icon {
@@ -132,7 +132,9 @@ header {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         width: 100%;
-
+        /* fixes */
+        max-width: 100%;
+        /* fixes */
         #menu,
         .menu {
             display: none;
