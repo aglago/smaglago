@@ -29,7 +29,6 @@ body {
 
 .lightBody {
     background-color: #fff;
-
 }
 
 .darkBody {
@@ -135,10 +134,10 @@ header {
         /* fixes */
         max-width: 100%;
         /* fixes */
-        #menu,
-        .menu {
-            display: none;
-        }
+    }
+
+    header #menu {
+        display: none;
     }
     
     .menu_icon {
