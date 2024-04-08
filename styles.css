@@ -34,18 +34,6 @@ body {
 
 .darkBody {
     background-color: var(--darkmode);
-
-    p {
-        color: #fff;
-    }
-
-    .skills_inner_container .heading {
-        color: white;
-    }
-
-    .skill_container {
-        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
-    }
 }
 
 .darkBody h1 {
@@ -64,6 +52,18 @@ body {
     background-color: var(--darkmode);
     /* box-shadow: 2px 1px 5px 0 rgba(64, 112, 244, 0.1); */
     border-bottom: 1px solid #20387a;
+}
+
+.darkBody .skill_container {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.darkBody .skills_inner_container .heading {
+    color: white;
+}
+
+.darkBody p {
+    color: #fff;
 }
 
 header {
