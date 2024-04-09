@@ -158,8 +158,9 @@ window.addEventListener('scroll', () => {
         const sectionPosition = section.getBoundingClientRect().top;
         const screenPosition = window.innerHeight / 1.5;
 
-        if (sectionPosition < screenPosition) {
+        if (sectionPosition < screenPosition)
             section.classList.add("animate");
-        }
+        else
+            section.classList.remove("animate");
     }
 });
