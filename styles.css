@@ -319,11 +319,12 @@ h2 {
 }
 
 .home .scrolldown {
-    display: none;
+    /* position: fixed !important; */
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    bottom: 7rem;
+    bottom: 1rem;
     right: 2rem;
     padding: 3px 10px;
     border-radius: 10px;
@@ -340,7 +341,6 @@ h2 {
 @media screen and (max-width: 480px) {
     .home .scrolldown {
         bottom: 11vh;
-        display: flex;
     }
 }
 
@@ -593,7 +593,7 @@ button
 }
 
 @media screen and (max-width: 480px) {
-    .dissapear {
+    .dissapear_paragraph {
         display: none;
     }
 }

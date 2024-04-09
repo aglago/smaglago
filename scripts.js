@@ -164,3 +164,17 @@ window.addEventListener('scroll', () => {
             section.classList.remove("animate");
     }
 });
+
+// Dissapear scrolldown button when scrolling
+
+// const scrolldown = document.querySelector(".scrolldown");
+// const scrolldownPosition = scrolldown.getBoundingClientRect().top;
+// const contactPosition = scrolldown.getBoundingClientRect().top;
+// const screenPosition = window.innerHeight;
+
+// window.addEventListener('scroll', () => { 
+//     if (scrolldownPosition > screenPosition)
+//         console.log("Scrolldown is showing");
+//     else
+//         console.log("Scrolldown is not showing");
+// });
