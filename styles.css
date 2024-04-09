@@ -999,3 +999,16 @@ footer a {
 footer a:hover {
     background-color: #1a2d62;
 }
+
+/* Animations of sections */
+/* #home, */
+.noanimate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+}
+
+.noanimate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}

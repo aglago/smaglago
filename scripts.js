@@ -146,5 +146,20 @@ function startCounting(id, target) {
       count++;
       element.textContent = count + '+';
     }
-  }, 100); // Adjust speed if needed
+  }, 100);
 }
+
+// Animations on scroll
+
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll(".noanimate");
+    
+    for (let section of sections) {
+        const sectionPosition = section.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.5;
+
+        if (sectionPosition < screenPosition) {
+            section.classList.add("animate");
+        }
+    }
+});
