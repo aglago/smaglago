@@ -986,12 +986,6 @@ section#projects {
     gap: 2rem;
 }
 
-@media screen and (max-width: 480px) {
-    .contact_wrap {
-        margin-top: -6rem;
-    }
-}
-
 .contact_wrap p {
     font-family: var(--noto);
     max-width: 80vw;
