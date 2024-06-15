@@ -399,6 +399,7 @@ button
     font-weight: 600;
     border-radius: 5px;
     /*TODO:*/
+    width: -moz-fit-content;
     width: fit-content;
     cursor: pointer;
     outline: none;
@@ -526,6 +527,7 @@ button
     align-items: center;
     gap: 1rem;
     background-color: var(--primary-color);
+    width: -moz-fit-content;
     width: fit-content;
     cursor: pointer;
 }
