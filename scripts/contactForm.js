@@ -34,7 +34,7 @@ form.addEventListener("submit", async (e) => {
     const result = await response.json();
     if (result.ok) {
         submitButton.style.backgroundColor = "#4070F4";
-        submitButton.innerHTML = "Message sent ✔️";
+        submitButton.value = "Send Message";
         form.reset();
     } else {
         console.log("error");
