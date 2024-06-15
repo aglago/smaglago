@@ -2,6 +2,8 @@
  * Listen to scrolling and update border bottom when necessary
  */
 
+const menu = document.getElementsByClassName("menu-itm");
+
 window.addEventListener("scroll", function () {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("nav a");
