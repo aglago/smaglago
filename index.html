@@ -1,706 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!--Font Awesome Icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://kit.fontawesome.com/1cad54f882.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Ami Manye</title>
-  </head>
-  <body class="lightBody" id="body">
-    <!--Header-->
-    <header class="header hide" id="header">
-      <h2 class="log">Ami Manye</h2>
 
-      <div class="right">
-        <!--Menu-->
-        <nav id="menu" class="menu">
-          <a id="home-menu-itm" class="menu-itm" href="#home">Home</a>
-          <a id="about-menu-itm" class="menu-itm" href="#about">About</a>
-          <a id="skills-menu-itm" class="menu-itm" href="#skills">Skills</a>
-          <a id="projects-menu-itm" class="menu-itm" href="#projects"
-            >Projects</a
-          >
-          <a id="contact-menu-itm" class="menu-itm" href="#contact">Contact</a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <!--Font Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
+  <title>Ami Manye</title>
+</head>
 
-        <!--Dark mode-->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#4070f4"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-moon"
-          id="darkmode"
-        >
-          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-        </svg>
+<body class="lightBody" id="body">
+  <!--Header-->
+  <header class="header hide" id="header">
+    <h2 class="log">Ami Manye</h2>
 
-        <!--Menu Icon : For smaller screens-->
-        <div class="menu_icon" id="menu_icon">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
+    <div class="right">
+      <!--Menu-->
+      <nav id="menu" class="menu">
+        <a id="home-menu-itm" class="menu-itm" href="#home">Home</a>
+        <a id="about-menu-itm" class="menu-itm" href="#about">About</a>
+        <a id="skills-menu-itm" class="menu-itm" href="#skills">Skills</a>
+        <a id="projects-menu-itm" class="menu-itm" href="#projects">Projects</a>
+        <a id="contact-menu-itm" class="menu-itm" href="#contact">Contact</a>
+      </nav>
+
+      <!--Dark mode-->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4070f4"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon" id="darkmode">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+      </svg>
+
+      <!--Menu Icon : For smaller screens-->
+      <div class="menu_icon" id="menu_icon">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div>
+  </header>
+
+  <!--Menu show for mobile-->
+  <!--Menu-->
+  <div class="menu_links noshow" id="menu_links">
+    <a id="home-menu-itm" class="mobile_menu-itm" href="#home">01. Home</a>
+    <a id="about-menu-itm" class="mobile_menu-itm" href="#about">02. About</a>
+    <a id="skills-menu-itm" class="mobile_menu-itm" href="#skills">03. Skills</a>
+    <a id="projects-menu-itm" class="mobile_menu-itm" href="#projects">04. Projects</a>
+    <a id="contact-menu-itm" class="mobile_menu-itm" href="#contact">05. Contact</a>
+  </div>
+
+  <!--Home-->
+  <section id="home" class="home">
+    <main id="home_main" class="home_main">
+      <!--Introduction-->
+      <div id="section1">
+        <div id="intro">
+          <h1 class="heroH1" id="heroH1">
+            Hi, <br />I am <span>Ami</span>. <br />Frontend Developer
+          </h1>
+          <p class="sub-title">Journeying to FullStack</p>
+        </div>
+
+        <!--Hire Me Button-->
+        <a href="#contact">
+          <div class="hire">Hire Me</div>
+        </a>
+
+        <!--Home footer-->
+        <div id="home_footer">
+          <!--LinkedIn-->
+          <a href="https://linkedin.com/in/aglago" target="_blank"><img src="images/socials/linkedin icon.png"
+              alt="linkedin" class="social-ic" /></a>
+          <!--X-->
+          <a href="https://twitter.com/smaglago" target="_blank"><img src="images/socials/x icon.png" alt="x"
+              class="social-ic" /></a>
+          <!--Github-->
+          <a href="https://github.com/aglago" target="_blank"><img src="images/socials/github icon.png" alt="github"
+              class="social-ic" /></a>
         </div>
       </div>
-    </header>
 
-    <!--Menu show for mobile-->
-    <!--Menu-->
-    <div class="menu_mobile noshow" id="menu_mobile">
-      <a id="home-menu-itm" class="mobile_menu-itm" href="#home">01. Home</a>
-      <a id="about-menu-itm" class="mobile_menu-itm" href="#about">02. About</a>
-      <a id="skills-menu-itm" class="mobile_menu-itm" href="#skills"
-        >03. Skills</a
-      >
-      <a id="projects-menu-itm" class="mobile_menu-itm" href="#projects"
-        >04. Projects</a
-      >
-      <a id="contact-menu-itm" class="mobile_menu-itm" href="#contact"
-        >05. Contact</a
-      >
+      <!--Profile Picture-->
+      <div id="section2">
+        <img height="80%" src="images/profilepicture.png" alt="" />
+      </div>
+    </main>
+
+    <!--TODO: Add a scroll to top button instead-->
+  </section>
+
+  <!--About-->
+  <section id="about" class="about noanimate">
+    <div class="about_wrapper">
+      <!--Heading-->
+      <h2 class="heading">About Me</h2>
+      <img src="./images/profilepicture.png" alt="" class="about_img" />
+      <div class="columns">
+        <div class="column1">
+          <!--Paragraph-->
+          <p class="paragraph">
+            I'm a frontend developer fueled by curiosity and a relentless
+            drive to innovate. My journey in web development began with a
+            fascination for how websites come to life, and it has since
+            evolved into a deep-rooted passion for crafting user-friendly
+            interfaces and seamless experiences. From translating designs into
+            clean, responsive code to optimizing performance for optimal user
+            interaction, I immerse myself in every aspect of the frontend
+            realm.
+          </p>
+          <!--Paragraph-->
+          <p class="paragraph dissapear_paragraph">
+            What excites me most is the constant evolution of technology. I
+            embrace the challenge of staying updated with the latest tools and
+            frameworks, always eager to explore new ways to enhance user
+            engagement and elevate digital experiences.
+          </p>
+        </div>
+        <div class="column2">
+          <div class="achievements">
+            <div class="sm_column" id="yearsExperience">
+              <h3>02+</h3>
+              <p class="paragraphAbout">
+                Years <br />
+                Experience
+              </p>
+            </div>
+            <div class="sm_column" id="projectsCompleted">
+              <h3>05+</h3>
+              <p class="paragraphAbout">
+                Projects <br />
+                Completed
+              </p>
+            </div>
+            <div class="sm_column" id="awardsWon">
+              <h3>10+</h3>
+              <p class="paragraphAbout">
+                Awards <br />
+                Won
+              </p>
+            </div>
+          </div>
+          <button class="resume">
+            <p>resume</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-download">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" x2="12" y1="15" y2="3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Skills-->
+  <section id="skills" class="skills_container noanimate">
+    <div class="skills_inner_container">
+      <h3 class="heading">Skills</h3>
+
+      <!--Column-->
+      <div class="skills_middle">
+        <h2>What I do</h2>
+        <p class="desc">
+          These are a list of languages, technologies and frameworks I work
+          with.
+        </p>
+        <div class="langs_and_tools">
+          <!--Skill :: HTML-->
+          <div class="skill_container">
+            <img src="images/skills/html.png" alt="" class="img" />
+            <h4>HTML 5</h4>
+          </div>
+
+          <!--Skill :: CSS-->
+          <div class="skill_container">
+            <img src="images/skills/CSS3_logo.svg.png" alt="" class="img" />
+            <h4>CSS 3</h4>
+          </div>
+
+          <!--Skill :: Tailwind CSS-->
+          <div class="skill_container">
+            <img src="images/skills/Tailwind_CSS_Logo.svg.png" alt="" class="img" />
+            <h4>Tailwind CSS</h4>
+          </div>
+
+          <!--Skill :: Javascript-->
+          <div class="skill_container">
+            <img src="images/skills/Javascript_Logo.png" alt="" class="img" />
+            <h4>JS</h4>
+          </div>
+
+          <!--Skill :: React-->
+          <div class="skill_container">
+            <img src="images/skills/react.png" alt="" class="img" />
+            <h4>React</h4>
+          </div>
+
+          <!--Skill :: C-->
+          <div class="skill_container">
+            <img src="images/skills/C.svg" alt="" class="img" />
+            <h4>C</h4>
+          </div>
+
+          <!--Skill :: Python-->
+          <div class="skill_container">
+            <img src="images/skills/Python-logo-notext.svg.png" alt="" class="img" />
+            <h4>Python</h4>
+          </div>
+
+          <!--Skill :: Linux-->
+          <div class="skill_container">
+            <img src="images/skills/Tux.svg.png" alt="" class="img" />
+            <h4>Linux</h4>
+          </div>
+
+          <!--Skill :: Git-->
+          <div class="skill_container">
+            <img src="images/skills/Git_icon.svg.png" alt="" class="img" />
+            <h4>Git</h4>
+          </div>
+
+          <!--Skill :: Github-->
+          <div class="skill_container">
+            <img src="images/socials/github icon.png" alt="" class="img" />
+            <h4>Github</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Projects-->
+  <section id="projects" class="projects noanimate">
+    <!--Heading-->
+    <h2 class="heading">My Projects</h2>
+
+    <!--Large Screens-->
+    <div class="large_screens">
+      <div class="blob">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+          <path fill="#4070F4"
+            d="M58.5,-53C67.4,-35.5,60.4,-11.7,54.4,11.5C48.4,34.7,43.4,57.3,28.3,68.1C13.2,78.9,-12,78.1,-33.3,68.2C-54.6,58.3,-72,39.3,-72.2,21.4C-72.4,3.4,-55.4,-13.6,-40.5,-32.4C-25.6,-51.3,-12.8,-72,6,-76.8C24.8,-81.6,49.6,-70.5,58.5,-53Z"
+            transform="translate(100 100)" />
+        </svg>
+      </div>
+
+      <h2>Projects</h2>
+
+      <!--projects-->
+      <div class="projects_wrapper">
+        <!--Previous-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#4070f4"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"
+          id="prevBtn" style="cursor: pointer">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+
+        <div class="carousel">
+          <!--Slide 1 : Portfolio Website-->
+          <div class="slide1">
+            <div class="proj_name_and_pic">
+              <img src="./images/projects/portfolio.webp" alt="" width="80%" />
+              <h2 style="font-size: 12px">01. My Portfolio Website</h2>
+            </div>
+            <div class="projectdesc">
+              <p>
+                This website serves as a digital representation of my work and
+                provides visitors with a comprehensive overview of my
+                capabilities.
+              </p>
+              <div class="spans">
+                <span class="html" style="background-color: #e44d26">HTML</span>
+                <span class="css" style="background-color: #214ce5">CSS</span>
+                <span class="js" style="background-color: #f7e018">Javascript</span>
+              </div>
+              <div class="buttons">
+                <a href="https://github.com/aglago/portfolio" target="_blank"><button>Github</button></a>
+                <a href="https://portfolio2023-ten-rho.vercel.app/" target="_blank"><button>Live</button></a>
+              </div>
+            </div>
+          </div>
+
+          <!--Slide 2 : Campus Map-->
+          <div class="slide2" style="display: none">
+            <div class="proj_name_and_pic">
+              <img src="./images/projects/campus.webp" alt="" width="80%" />
+              <h2 style="font-size: 12px">02. Campus Map</h2>
+            </div>
+            <div class="projectdesc">
+              <p>
+                I built this project to aid newly admitted students to find
+                their way around campus.
+              </p>
+              <div class="spans">
+                <span class="html" style="background-color: #63dafb">React</span>
+                <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
+              </div>
+              <div class="buttons">
+                <a href="./inprogress.html" target="_blank"><button>Github</button></a>
+                <a href="./inprogress.html" target="_blank"><button>Live</button></a>
+              </div>
+            </div>
+          </div>
+
+          <!--Slide 3 : Track Anyone-->
+          <div class="slide3" style="display: none">
+            <div class="proj_name_and_pic">
+              <img src="./images/projects/trackanyone.webp" alt="" width="80%" />
+              <h2 style="font-size: 12px">03. Track Anyone</h2>
+            </div>
+            <div class="projectdesc">
+              <p>
+                Track anyone at all through their mobile numbers. App allows
+                you to view current location and get directions to meet them.
+              </p>
+              <div class="spans">
+                <span class="html" style="background-color: #63dafb">React</span>
+                <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
+              </div>
+              <div class="buttons">
+                <a href="./inprogress.html" target="_blank"><button>Github</button></a>
+                <a href="./inprogress.html" target="_blank"><button>Live</button></a>
+              </div>
+            </div>
+          </div>
+
+          <!--Slide 3 : Track Anyone-->
+          <div class="slide3" style="display: none">
+            <div class="proj_name_and_pic">
+              <img src="./images/projects/stackinfo (1).webp" alt="" width="80%" />
+              <h2 style="font-size: 12px">04. Stacksupdates</h2>
+            </div>
+            <div class="projectdesc">
+              <p>
+                Get real time data of the population all careers in tech and
+                programming. You can use this information to determine which
+                path has increasing or decreasing demand for workforce.
+              </p>
+              <div class="spans">
+                <span class="html" style="background-color: #63dafb">React</span>
+                <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
+              </div>
+              <div class="buttons">
+                <a href="./inprogress.html" target="_blank"><button>Github</button></a>
+                <a href="./inprogress.html" target="_blank"><button>Live</button></a>
+              </div>
+            </div>
+          </div>
+
+          <!--Slide 5 : Fastparcel-->
+          <div class="slide3" style="display: none">
+            <div class="proj_name_and_pic">
+              <img src="./images/projects/fastparcel.webp" alt="" width="80%" />
+              <h2 style="font-size: 12px">05. FastParcel</h2>
+            </div>
+            <div class="projectdesc">
+              <p>
+                Get parcels picked up and delivered to the destination address
+                very fast and at affordable rates.
+              </p>
+              <div class="spans">
+                <span class="html" style="background-color: #63dafb">React</span>
+                <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
+              </div>
+              <div class="buttons">
+                <a href="./inprogress.html" target="_blank"><button>Github</button></a>
+                <a href="./inprogress.html" target="_blank"><button>Live</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Next-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#4070f4"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"
+          id="nextBtn" style="cursor: pointer">
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </div>
     </div>
 
-    <!--Home-->
-    <section id="home" class="home">
-      <main id="home_main" class="home_main">
-        <!--Introduction-->
-        <div id="section1">
-          <div id="intro">
-            <h1 class="heroH1" id="heroH1">
-              Hi, <br />I am <span>Ami</span>. <br />Frontend Developer
-            </h1>
-            <p class="sub-title">Journeying to FullStack</p>
-          </div>
-
-          <!--Hire Me Button-->
-          <a href="#contact">
-            <div class="hire">Hire Me</div>
-          </a>
-
-          <!--Home footer-->
-          <div id="home_footer">
-            <!--LinkedIn-->
-            <a href="https://linkedin.com/in/aglago" target="_blank"
-              ><img
-                src="images/socials/linkedin icon.png"
-                alt="linkedin"
-                class="social-ic"
-            /></a>
-            <!--X-->
-            <a href="https://twitter.com/smaglago" target="_blank"
-              ><img src="images/socials/x icon.png" alt="x" class="social-ic"
-            /></a>
-            <!--Github-->
-            <a href="https://github.com/aglago" target="_blank"
-              ><img
-                src="images/socials/github icon.png"
-                alt="github"
-                class="social-ic"
-            /></a>
-          </div>
-        </div>
-
-        <!--Profile Picture-->
-        <div id="section2">
-          <img height="80%" src="images/profilepicture.png" alt="" />
-        </div>
-      </main>
-
-      <!--Scroll down icon-->
-      <div id="scrolldown" class="scrolldown">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#4070f4"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-mouse"
-        >
-          <rect x="5" y="2" width="14" height="20" rx="7" />
-          <path d="M12 6v4" />
-        </svg>
-        <p>scroll down</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#4070f4"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-down"
-        >
-          <path d="M12 5v14" />
-          <path d="m19 12-7 7-7-7" />
-        </svg>
-      </div>
-    </section>
-
-    <!--About-->
-    <section id="about" class="about noanimate">
-      <div class="about_wrapper">
-        <!--Heading-->
-        <h2 class="heading">About Me</h2>
-        <img src="./images/profilepicture.png" alt="" class="about_img" />
-        <div class="columns">
-          <div class="column1">
-            <!--Paragraph-->
-            <p class="paragraph">
-              I'm a frontend developer fueled by curiosity and a relentless
-              drive to innovate. My journey in web development began with a
-              fascination for how websites come to life, and it has since
-              evolved into a deep-rooted passion for crafting user-friendly
-              interfaces and seamless experiences. From translating designs into
-              clean, responsive code to optimizing performance for optimal user
-              interaction, I immerse myself in every aspect of the frontend
-              realm.
-            </p>
-            <!--Paragraph-->
-            <p class="paragraph dissapear_paragraph">
-              What excites me most is the constant evolution of technology. I
-              embrace the challenge of staying updated with the latest tools and
-              frameworks, always eager to explore new ways to enhance user
-              engagement and elevate digital experiences.
-            </p>
-          </div>
-          <div class="column2">
-            <div class="achievements">
-              <div class="sm_column" id="yearsExperience">
-                <h3>02+</h3>
-                <p class="paragraphAbout">
-                  Years <br />
-                  Experience
-                </p>
-              </div>
-              <div class="sm_column" id="projectsCompleted">
-                <h3>05+</h3>
-                <p class="paragraphAbout">
-                  Projects <br />
-                  Completed
-                </p>
-              </div>
-              <div class="sm_column" id="awardsWon">
-                <h3>10+</h3>
-                <p class="paragraphAbout">
-                  Awards <br />
-                  Won
-                </p>
-              </div>
-            </div>
-            <button class="resume">
-              <p>resume</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-download"
-              >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" x2="12" y1="15" y2="3" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Skills-->
-    <section id="skills" class="skills_container noanimate">
-      <div class="skills_inner_container">
-        <h3 class="heading">Skills</h3>
-
-        <!--Column-->
-        <div class="skills_middle">
-          <h2>What I do</h2>
-          <p class="desc">
-            These are a list of languages, technologies and frameworks I work
-            with.
+    <!--Smaller Screens-->
+    <div class="small_screens">
+      <!--Portfolio project-->
+      <div class="project">
+        <img src="images/projects/portfolio.webp" alt="image of portfolio project" class="img" />
+        <div class="titleAndStatus">
+          <h6 class="title">Portfolio Website</h6>
+          <p style="color: red" class="desc">
+            <em style="color: green">Project completed</em>
           </p>
-          <div class="langs_and_tools">
-            <!--Skill :: HTML-->
-            <div class="skill_container">
-              <img src="images/skills/html.png" alt="" class="img" />
-              <h4>HTML 5</h4>
-            </div>
-
-            <!--Skill :: CSS-->
-            <div class="skill_container">
-              <img src="images/skills/CSS3_logo.svg.png" alt="" class="img" />
-              <h4>CSS 3</h4>
-            </div>
-
-            <!--Skill :: Tailwind CSS-->
-            <div class="skill_container">
-              <img
-                src="images/skills/Tailwind_CSS_Logo.svg.png"
-                alt=""
-                class="img"
-              />
-              <h4>Tailwind CSS</h4>
-            </div>
-
-            <!--Skill :: Javascript-->
-            <div class="skill_container">
-              <img src="images/skills/Javascript_Logo.png" alt="" class="img" />
-              <h4>JS</h4>
-            </div>
-
-            <!--Skill :: React-->
-            <div class="skill_container">
-              <img src="images/skills/react.png" alt="" class="img" />
-              <h4>React</h4>
-            </div>
-
-            <!--Skill :: C-->
-            <div class="skill_container">
-              <img src="images/skills/C.svg" alt="" class="img" />
-              <h4>C</h4>
-            </div>
-
-            <!--Skill :: Python-->
-            <div class="skill_container">
-              <img
-                src="images/skills/Python-logo-notext.svg.png"
-                alt=""
-                class="img"
-              />
-              <h4>Python</h4>
-            </div>
-
-            <!--Skill :: Linux-->
-            <div class="skill_container">
-              <img src="images/skills/Tux.svg.png" alt="" class="img" />
-              <h4>Linux</h4>
-            </div>
-
-            <!--Skill :: Git-->
-            <div class="skill_container">
-              <img src="images/skills/Git_icon.svg.png" alt="" class="img" />
-              <h4>Git</h4>
-            </div>
-
-            <!--Skill :: Github-->
-            <div class="skill_container">
-              <img src="images/socials/github icon.png" alt="" class="img" />
-              <h4>Github</h4>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <!--Projects-->
-    <section id="projects" class="projects noanimate">
-      <!--Heading-->
-      <h2 class="heading">My Projects</h2>
-
-      <!--Large Screens-->
-      <div class="large_screens">
-        <div class="blob">
-          <svg
-            viewBox="0 0 200 200"
-            xmlns="http://www.w3.org/2000/svg"
-            height="200"
-            width="200"
-          >
-            <path
-              fill="#4070F4"
-              d="M58.5,-53C67.4,-35.5,60.4,-11.7,54.4,11.5C48.4,34.7,43.4,57.3,28.3,68.1C13.2,78.9,-12,78.1,-33.3,68.2C-54.6,58.3,-72,39.3,-72.2,21.4C-72.4,3.4,-55.4,-13.6,-40.5,-32.4C-25.6,-51.3,-12.8,-72,6,-76.8C24.8,-81.6,49.6,-70.5,58.5,-53Z"
-              transform="translate(100 100)"
-            />
-          </svg>
+        <p class="desc">
+          This website serves as a digital representation of my work and
+          provides visitors with a comprehensive overview of my capabilities.
+        </p>
+        <div class="spans">
+          <span class="html" style="background-color: #e44d26">HTML</span>
+          <span class="css" style="background-color: #214ce5">CSS</span>
+          <span class="js" style="background-color: #f7e018">Javascript</span>
         </div>
-
-        <h2>Projects</h2>
-
-        <!--projects-->
-        <div class="projects_wrapper">
-          <!--Previous-->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="90"
-            height="90"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#4070f4"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-left"
-            id="prevBtn"
-            style="cursor: pointer"
-          >
-            <path d="m15 18-6-6 6-6" />
-          </svg>
-
-          <div class="carousel">
-            <!--Slide 1 : Portfolio Website-->
-            <div class="slide1">
-              <div class="proj_name_and_pic">
-                <img
-                  src="./images/projects/portfolio.webp"
-                  alt=""
-                  width="80%"
-                />
-                <h2 style="font-size: 12px">01. My Portfolio Website</h2>
-              </div>
-              <div class="projectdesc">
-                <p>
-                  This website serves as a digital representation of my work and
-                  provides visitors with a comprehensive overview of my
-                  capabilities.
-                </p>
-                <div class="spans">
-                  <span class="html" style="background-color: #e44d26"
-                    >HTML</span
-                  >
-                  <span class="css" style="background-color: #214ce5">CSS</span>
-                  <span class="js" style="background-color: #f7e018"
-                    >Javascript</span
-                  >
-                </div>
-                <div class="buttons">
-                  <a href="https://github.com/aglago/portfolio" target="_blank"
-                    ><button>Github</button></a
-                  >
-                  <a
-                    href="https://portfolio2023-ten-rho.vercel.app/"
-                    target="_blank"
-                    ><button>Live</button></a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!--Slide 2 : Campus Map-->
-            <div class="slide2" style="display: none">
-              <div class="proj_name_and_pic">
-                <img src="./images/projects/campus.webp" alt="" width="80%" />
-                <h2 style="font-size: 12px">02. Campus Map</h2>
-              </div>
-              <div class="projectdesc">
-                <p>
-                  I built this project to aid newly admitted students to find
-                  their way around campus.
-                </p>
-                <div class="spans">
-                  <span class="html" style="background-color: #63dafb"
-                    >React</span
-                  >
-                  <span class="css" style="background-color: #35bef8"
-                    >Tailwind CSS</span
-                  >
-                </div>
-                <div class="buttons">
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Github</button></a
-                  >
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Live</button></a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!--Slide 3 : Track Anyone-->
-            <div class="slide3" style="display: none">
-              <div class="proj_name_and_pic">
-                <img
-                  src="./images/projects/trackanyone.webp"
-                  alt=""
-                  width="80%"
-                />
-                <h2 style="font-size: 12px">03. Track Anyone</h2>
-              </div>
-              <div class="projectdesc">
-                <p>
-                  Track anyone at all through their mobile numbers. App allows
-                  you to view current location and get directions to meet them.
-                </p>
-                <div class="spans">
-                  <span class="html" style="background-color: #63dafb"
-                    >React</span
-                  >
-                  <span class="css" style="background-color: #35bef8"
-                    >Tailwind CSS</span
-                  >
-                </div>
-                <div class="buttons">
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Github</button></a
-                  >
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Live</button></a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!--Slide 3 : Track Anyone-->
-            <div class="slide3" style="display: none">
-              <div class="proj_name_and_pic">
-                <img
-                  src="./images/projects/stackinfo (1).webp"
-                  alt=""
-                  width="80%"
-                />
-                <h2 style="font-size: 12px">04. Stacksupdates</h2>
-              </div>
-              <div class="projectdesc">
-                <p>
-                  Get real time data of the population all careers in tech and
-                  programming. You can use this information to determine which
-                  path has increasing or decreasing demand for workforce.
-                </p>
-                <div class="spans">
-                  <span class="html" style="background-color: #63dafb"
-                    >React</span
-                  >
-                  <span class="css" style="background-color: #35bef8"
-                    >Tailwind CSS</span
-                  >
-                </div>
-                <div class="buttons">
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Github</button></a
-                  >
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Live</button></a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!--Slide 5 : Fastparcel-->
-            <div class="slide3" style="display: none">
-              <div class="proj_name_and_pic">
-                <img
-                  src="./images/projects/fastparcel.webp"
-                  alt=""
-                  width="80%"
-                />
-                <h2 style="font-size: 12px">05. FastParcel</h2>
-              </div>
-              <div class="projectdesc">
-                <p>
-                  Get parcels picked up and delivered to the destination address
-                  very fast and at affordable rates.
-                </p>
-                <div class="spans">
-                  <span class="html" style="background-color: #63dafb"
-                    >React</span
-                  >
-                  <span class="css" style="background-color: #35bef8"
-                    >Tailwind CSS</span
-                  >
-                </div>
-                <div class="buttons">
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Github</button></a
-                  >
-                  <a href="./inprogress.html" target="_blank"
-                    ><button>Live</button></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Next-->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="90"
-            height="90"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#4070f4"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-chevron-right"
-            id="nextBtn"
-            style="cursor: pointer"
-          >
-            <path d="m9 18 6-6-6-6" />
-          </svg>
-        </div>
+        <a href="https://smaglago.vercel.app" target="_blank" class="view">View Project</a>
       </div>
 
-      <!--Smaller Screens-->
-      <div class="small_screens">
-        <!--Portfolio project-->
-        <div class="project">
-          <img
-            src="images/projects/portfolio.webp"
-            alt="image of portfolio project"
-            class="img"
-          />
-          <div class="titleAndStatus">
-            <h6 class="title">Portfolio Website</h6>
-            <p style="color: red" class="desc">
-              <em style="color: green">Project completed</em>
-            </p>
-          </div>
-          <p class="desc">
-            This website serves as a digital representation of my work and
-            provides visitors with a comprehensive overview of my capabilities.
+      <!--Campus Map-->
+      <div class="project">
+        <img src="images/projects/campus.webp" alt="image of campus map project" class="img" />
+        <div class="titleAndStatus">
+          <h6 class="title">Campus Map</h6>
+          <p style="color: red" class="desc">
+            <em>Project in progress</em>
           </p>
-          <div class="spans">
-            <span class="html" style="background-color: #e44d26">HTML</span>
-            <span class="css" style="background-color: #214ce5">CSS</span>
-            <span class="js" style="background-color: #f7e018">Javascript</span>
-          </div>
-          <a href="https://smaglago.vercel.app" target="_blank" class="view"
-            >View Project</a
-          >
         </div>
-
-        <!--Campus Map-->
-        <div class="project">
-          <img
-            src="images/projects/campus.webp"
-            alt="image of campus map project"
-            class="img"
-          />
-          <div class="titleAndStatus">
-            <h6 class="title">Campus Map</h6>
-            <p style="color: red" class="desc">
-              <em>Project in progress</em>
-            </p>
-          </div>
-          <p class="desc">
-            Seeing how many campuses are very large and locating classroom
-            blocks, hostels, food joints, or relax areas may be challenging for
-            new students, I built this project to aid newly admitted students to
-            find their way around campus.
-          </p>
-          <div class="spans">
-            <span class="html" style="background-color: #63dafb">React</span>
-            <span class="css" style="background-color: #35bef8"
-              >Tailwind CSS</span
-            >
-          </div>
-          <a href="" target="_blank" class="view">View Project</a>
+        <p class="desc">
+          Seeing how many campuses are very large and locating classroom
+          blocks, hostels, food joints, or relax areas may be challenging for
+          new students, I built this project to aid newly admitted students to
+          find their way around campus.
+        </p>
+        <div class="spans">
+          <span class="html" style="background-color: #63dafb">React</span>
+          <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
         </div>
-
-        <!--Track Anyone-->
-        <div class="project">
-          <img
-            src="images/projects/trackanyone.webp"
-            alt="image of track anyone project"
-            class="img"
-          />
-          <div class="titleAndStatus">
-            <h6 class="title">Track Anyone</h6>
-            <p style="color: red" class="desc">
-              <em>Project in progress</em>
-            </p>
-          </div>
-          <p class="desc">
-            Track anyone at all through their mobile numbers. App allows you to
-            view current location and get directions to meet them.
-          </p>
-          <div class="spans">
-            <span class="html" style="background-color: #63dafb">React</span>
-            <span class="css" style="background-color: #35bef8"
-              >Tailwind CSS</span
-            >
-          </div>
-          <a href="" target="_blank" class="view">View Project</a>
-        </div>
-
-        <!--StacksInfo-->
-        <div class="project">
-          <img
-            src="images/projects/stackinfo (1).webp"
-            alt="image of stacksinfo project"
-            class="img"
-          />
-          <div class="titleAndStatus">
-            <h6 class="title">Stacksupdates</h6>
-            <p style="color: red" class="desc">
-              <em>Project in progress</em>
-            </p>
-          </div>
-          <p class="desc">
-            Get real time data of the population all careers in tech and
-            programming. You can use this information to determine which path
-            has increasing or decreasing demand for workforce.
-          </p>
-          <div class="spans">
-            <span class="html" style="background-color: #63dafb">React</span>
-            <span class="css" style="background-color: #35bef8"
-              >Tailwind CSS</span
-            >
-          </div>
-          <a href="" target="_blank" class="view">View Project</a>
-        </div>
-
-        <!--FastParcel-->
-        <div class="project">
-          <img
-            src="images/projects/fastparcel.webp"
-            alt="portfolio"
-            class="img"
-          />
-          <div class="titleAndStatus">
-            <h6 class="title">Fast Parcel</h6>
-            <p style="color: red" class="desc">
-              <em>Project in progress</em>
-            </p>
-          </div>
-          <p class="desc">
-            Get parcels picked up and delivered to the destination address very
-            fast and at affordable rates.
-          </p>
-          <div class="spans">
-            <span class="html" style="background-color: #63dafb">React</span>
-            <span class="css" style="background-color: #35bef8"
-              >Tailwind CSS</span
-            >
-          </div>
-          <a href="" target="_blank" class="view">View Project</a>
-        </div>
+        <a href="" target="_blank" class="view">View Project</a>
       </div>
-    </section>
 
-    <!--Contact-->
-    <section id="contact" class="contact noanimate">
-      <div class="contact_wrap">
+      <!--Track Anyone-->
+      <div class="project">
+        <img src="images/projects/trackanyone.webp" alt="image of track anyone project" class="img" />
+        <div class="titleAndStatus">
+          <h6 class="title">Track Anyone</h6>
+          <p style="color: red" class="desc">
+            <em>Project in progress</em>
+          </p>
+        </div>
+        <p class="desc">
+          Track anyone at all through their mobile numbers. App allows you to
+          view current location and get directions to meet them.
+        </p>
+        <div class="spans">
+          <span class="html" style="background-color: #63dafb">React</span>
+          <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
+        </div>
+        <a href="" target="_blank" class="view">View Project</a>
+      </div>
+
+      <!--StacksInfo-->
+      <div class="project">
+        <img src="images/projects/stackinfo (1).webp" alt="image of stacksinfo project" class="img" />
+        <div class="titleAndStatus">
+          <h6 class="title">Stacksupdates</h6>
+          <p style="color: red" class="desc">
+            <em>Project in progress</em>
+          </p>
+        </div>
+        <p class="desc">
+          Get real time data of the population all careers in tech and
+          programming. You can use this information to determine which path
+          has increasing or decreasing demand for workforce.
+        </p>
+        <div class="spans">
+          <span class="html" style="background-color: #63dafb">React</span>
+          <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
+        </div>
+        <a href="" target="_blank" class="view">View Project</a>
+      </div>
+
+      <!--FastParcel-->
+      <div class="project">
+        <img src="images/projects/fastparcel.webp" alt="portfolio" class="img" />
+        <div class="titleAndStatus">
+          <h6 class="title">Fast Parcel</h6>
+          <p style="color: red" class="desc">
+            <em>Project in progress</em>
+          </p>
+        </div>
+        <p class="desc">
+          Get parcels picked up and delivered to the destination address very
+          fast and at affordable rates.
+        </p>
+        <div class="spans">
+          <span class="html" style="background-color: #63dafb">React</span>
+          <span class="css" style="background-color: #35bef8">Tailwind CSS</span>
+        </div>
+        <a href="" target="_blank" class="view">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact-->
+  <section id="contact" class="contact noanimate">
+    <div class="contact_wrap">
+      <div>
         <!--Headings-->
         <h2 class="heading">Contact Me For</h2>
         <p>
@@ -709,29 +507,48 @@
           Work <span>|</span>
           Networking
         </p>
-
-        <div class="socials">
-          <a href="mailto:samuellamanyeaglago@gmail.com">
-            <img src="images/socials/gmail.png" alt="Gmail Icon" />
-          </a>
-          <a href="https://twitter.com/smaglago">
-            <img src="images/socials/twitter.png" alt="Twitter Icon" />
-          </a>
-          <a
-            href="https://wa.me/233509581027?text=Hello%20Ami...(Please%20continue%20your%20message)"
-          >
-            <img src="images/socials/whatsapp.png" alt="WhatsApp Icon" />
-          </a>
-        </div>
       </div>
-    </section>
 
-    <!--Footer-->
-    <footer>
-      <a href="#"> Samuella M. Aglago | 2024 </a>
-    </footer>
+      <div class="message_me">
+         <form action="">
+            <input type="text" name="firstname" placeholder="First name" />
+            <input type="text" name="lastname" placeholder="Last name" />
+            <input type="email" name="email" placeholder="What's your email?" />
+            <textarea name="message" placeholder="Your questions..."></textarea>
+            <input type="submit" name="submit" value="Send message" class="submit">
+          </form>
 
-    <!--JavaScript-->
-    <script src="scripts.js"></script>
-  </body>
+          <article class="ill_socials">
+            <img src="/images/socials/email@contact.png" alt="" height="200" width="250">
+            <div class="socials">
+              <a href="mailto:samuellamanyeaglago@gmail.com">
+                <img src="images/socials/gmail.png" alt="Gmail Icon" />
+              </a>
+              <a href="https://twitter.com/smaglago">
+                <img src="images/socials/twitter.png" alt="Twitter Icon" />
+              </a>
+              <a href="https://wa.me/233509581027?text=Hello%20Ami...(Please%20continue%20your%20message)">
+                <img src="images/socials/whatsapp.png" alt="WhatsApp Icon" />
+              </a>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <a href="#contact"> Samuella M. Aglago | 2024 </a>
+  </footer>
+
+  <!--JavaScript-->
+  <script src="/scripts/mobileIcon.js"></script>
+  <script src="/scripts/linkBorderBottom.js"></script>
+  <script src="/scripts/darkMode.js"></script>
+  <script src="/scripts/carosel.js"></script>
+  <script src="/scripts/numbersCount.js"></script>
+  <script src="/scripts/animateSectionsOnEntry.js"></script>
+  <script src="/scripts/contactForm.js"></script>
+</body>
+
 </html>
