@@ -11,6 +11,7 @@
     --lightH1: #000000;
     --youngserif: 'Young Serif';
     --noto: 'Noto Sans JP', sans-serif;
+    --poppin: "Poppin", sans-serif;
 }
 
 html {
@@ -299,7 +300,7 @@ h2 {
 }
 
 .sub-title {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--noto);
     padding-bottom: 20px;
 }
 
@@ -562,7 +563,7 @@ button
 .about .paragraph,
 .about .paragraphAbout {
     font-size: 15px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--noto);
 }
 
 .about .paragraphAbout {
@@ -594,7 +595,7 @@ button
 #projects
 {
     position: relative;
-    font-family: "Poppin", sans-serif;
+    font-family: var(--poppin);
 	display: flex;
 	align-items: center;
     flex-direction: column;
@@ -630,7 +631,7 @@ button
 .small_screens .project {
     position: relative;
     width: 350px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--noto);
     font-weight: 400;
     text-align: left;
     border-radius: 10px;
@@ -671,6 +672,10 @@ button
     color: var(--primary-color);
     text-align: left;
     padding-left: 10px;
+}
+
+.projstatus {
+    color: red;
 }
 
 .small_screens a {
@@ -715,6 +720,10 @@ button
     padding-right: 5rem;
 }
 
+svg {
+    cursor: pointer;
+}
+
 .slide1, .slide2, .slide3{
     display: flex;
     align-items: center;
@@ -722,13 +731,26 @@ button
     gap: 2rem;
 }
 
-.proj_name_and_pic {
+div.carousel .slide2,
+div.carousel .slide3,
+div.carousel .slide4,
+div.carousel .slide5 {
+    display: none;
+}
+
+figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     flex: 1;
+}
+
+figcaption {
+    color: var(--primary-color);
+    font-size: 12px;
+    font: var(--youngserif);
 }
 
 .projectdesc {
@@ -743,7 +765,7 @@ button
 
 .projectdesc p {
     font-size: 15px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--noto);
     max-width: 350px;
 }
 
@@ -778,6 +800,49 @@ button
     font-size: 9px;
 }
 
+span.html {
+    background-color: #e44d26;
+}
+
+span.css {
+    background-color: #214ce5;
+}
+
+span.javascript {
+    background-color: #f7e018;
+}
+
+span.python {
+    background-color: #f7e018;
+}
+
+span.react {
+    background-color: #61dbfb;
+}
+
+span.vue {
+    background-color: #2c3e50;
+}
+
+span.angular {
+    background-color: #e44d26;
+}
+
+span.nodejs {
+    background-color: #f7e018;
+}
+
+span.php {
+    background-color: #e44d26;
+}
+
+span.mysql {
+    background-color: #f7e018;
+}
+
+span.tailwind {
+    background-color: #35bef8;
+}
 
 /*SKILLS STYLES*/
 .skills_container
@@ -928,7 +993,7 @@ section#projects {
 }
 
 .contact_wrap p {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--noto);
     max-width: 80vw;
     text-align: center;
 }
@@ -975,6 +1040,10 @@ input, textarea {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     width: 250px;
+}
+
+textarea {
+    resize: none;
 }
 
 input:placeholder, textarea:placeholder {
