@@ -2,46 +2,41 @@
  * logic behind the user submiting a form
  */
 
-// Disable submit button when user clicks
-const submitButton = document.querySelector("input.submit")
-submitButton.addEventListener("click", (e) => { 
-    submitButton.style.backgroundColor = "gray";
-    submitButton.innerHTML = "Message sent ✔️";
-
+const form = document.querySelector("form")
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    // collecting information from the contact form
+
+    const submitButton = document.querySelector("input[type=submit]")
+    submitButton.style.backgroundColor = "gray";
+    submitButton.value = "Sending message...";
+
     const firstName = document.querySelector("input[name=firstname]").value
     const lastName = document.querySelector("input[name=lastname]").value
     const email = document.querySelector("input[name=email]").value
     const message = document.querySelector("textarea[name=message]").value
 
-    // sending the information to the server
-    // sendToServer(firstName, lastName, email, message);
-})
+    const data = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        message: message
+    }
 
-const sendToServer = (firstName, lastName, email, message) => {
-    const form = document.querySelector("form")
-    form.addEventListener("submit", async (e) => { 
-        e.preventDefault();
-        const data = {
-            firstName: firstName,
-            lastName: lastName,
-            email: email,
-            message: message
-        }
-        const response = await fetch("https://formspree.io/f/mlelmple", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        })
-        const result = await response.json();
-        console.log(result);
-        if (result.ok) {
-            form.reset();
-        } else {
-            console.log("error");
-        }
-    })
-}
+    // sending the information to formspree.io
+    const response = await fetch("https://formspree.io/f/xleqqoqk", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+    if (result.ok) {
+        submitButton.style.backgroundColor = "#4070F4";
+        submitButton.innerHTML = "Message sent ✔️";
+        form.reset();
+    } else {
+        console.log("error");
+    }
+})
